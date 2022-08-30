@@ -5,8 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style/styles.css">
 </head>
 <body>
-    
+    <main>
+    <div class="background_card">
+        <figure class="back_card card" >
+            <img src="./images/bg-card-back.png" alt="backcard" id="back_card">
+            <img src="./images/bg-card-front.png" alt="frontcard" id="front_card">
+        </figure>
+    </div>
+    <div class="user_form">
+        <span>CARDHOLDER NAME</span>
+        <p></p>
+        <p></p>
+        <input type="text" id="nombre" placeholder="e.g CESAR JIMENEZ" class="input-text">
+        <span>CARD NUMBER</span>
+        <input type="text" id="nombre" placeholder="Cual es tu nombre">
+        <label for="mes">
+            <span>
+                EXP. DATE(MM/YY)
+                <input type="text" maxlength="2" id="month" name="mes" class="card_info">
+                <input type="text" maxlength="2" id="year" name="year" class="card_info">
+            </span>
+            <span>CVC
+                <input type="text" maxlength="3" id="cvc" name="cvc_code" class="card_info">
+            </span>
+       
+
+    </div>
+    </main>
+
+
+<script src="./js/main.js"></script>
 </body>
 </html>

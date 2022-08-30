@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+
+* 
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+html 
+{
+    font-size: 62.5%;
+}
+
+
+:root {
+
+    --white: hsl(0, 0%, 100%);
+    --Light_grayish_violet: hsl(270, 3%, 87%);
+    --Dark_grayish_violet: hsl(279, 6%, 55%);
+    --Very_dark_violet: hsl(278, 68%, 11%);
+    --gradiant1: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+    --redinputerror: hsl(0, 100%, 66%);
+    --font1:'DynaPuff';
+    --font2: 'Space Grotesk';
+
+  }
+body {
+    margin: 0;
+    background-color: var(--Light_grayish_violet);
+  }
+
+span
+{
+    font-family: var(--font2);
+    font-weight: 500;
+
+}
+.input-text
+{
+    display: inline-flexbox;
+}
+
+input
+{
+    height: 5vh;
+    border-radius: 5px;
+    margin: 10px 0px 10px 0px;
+}
+
+
+
+@media (max-width: 375px) 
+{
+
+    .main
+    {
+        display: grid;
+        grid-template-rows: 1fr 4fr;
+
+    }
+    .background_card
+    {
+        display: inline-flex;
+        width: 100vw;
+        height: 35vh;
+        background-color: var(--Very_dark_violet);
+    }
+        .card
+    {
+        display: block;
+        width: 100%;
+        height: 50%;
+        padding: 10px;
+    }
+    img 
+    {
+        width: 80%;
+
+    }
+
+    #back_card
+    {
+        position: absolute;
+        top:3vh;
+        right:5vw;
+    }
+    #front_card
+    {
+        position: absolute;
+        top:16vh;
+        right:15vw;
+    }
+    .user_form
+    {
+        display:flex;
+        flex-direction: column;
+        margin-top: 5vh;
+        padding: 5px;
+    }
+    .card_info
+    {
+        width: 15vw;
+ 
+    }
+    
+
+    
+
+
+
+}
+
