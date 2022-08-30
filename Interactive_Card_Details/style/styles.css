@@ -35,28 +35,32 @@ span
 {
     font-family: var(--font2);
     font-weight: 500;
+    margin: 10px 0px 0px 15px;
 
 }
+
+
 .input-text
-{
-    display: inline-flexbox;
-}
-
-input
 {
     height: 5vh;
     border-radius: 5px;
+    width: 80vw;
     margin: 10px 0px 10px 0px;
 }
 
-.main
+.espacio
     {
         display: grid;
         grid-template-rows: 1fr 4fr;
+        border-style: solid;
+        border-color:green;
+        height: 100vh;
 
     }
     .background_card
     {
+        border-style: solid;
+        border-color: yellow;
         display: inline-flex;
         width: 100vw;
         height: 35vh;
@@ -93,11 +97,40 @@ input
         flex-direction: column;
         margin-top: 5vh;
         padding: 5px;
+        border-style: solid;
+        border-color: yellow;
     }
     .card_info
     {
         width: 15vw;
  
+    }
+    .input-text
+    {
+        height: 5vh;
+        border-radius: 5px;
+        width: 80vw;
+        margin: 10px 0px 10px 0px;
+    }
+    .card_info
+    {
+    height: 5vh;
+    border-radius: 5px;
+    width: 15vw;
+    margin: 10px 0px 10px 0px;
+    }
+    
+    button
+    {
+        position: absolute;
+        border-radius: 5px;
+        color: white;
+        background-color: var(--Very_dark_violet) ;
+        width: 80vw;
+        height: 6vh;
+        font-family: var(--font2);
+
+
     }
     
 
@@ -105,25 +138,23 @@ input
 @media (min-width: 376px) 
 {
 
-    .main
+    .espacio
     {
-        display: grid;
-        grid-template-columns: 1fr 4fr;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        border-style: solid;
+        border-color:green;
+        height: 100vh;
 
     }
     .background_card
     {
-        display:flex;
+
+        border-style: solid;
+        border-color: yellow;
         width: 30vw;
         height: 100vh;
         background-color: var(--Very_dark_violet);
-    }
-        .card
-    {
-        display: block;
-        width: 100%;
-        height: 50%;
-        padding: 10px;
     }
     img 
     {
@@ -134,32 +165,58 @@ input
     #back_card
     {
         position: absolute;
-        top:45vh;
-        left:25vw;
+        top:55vh;
+        left:15vw;
     }
     #front_card
     {
         position: absolute;
-        top:16vh;
-        left:15vw;
+        top:26vh;
+        left:10vw;
     }
     .user_form
     {
-        display:flex;
-        flex-direction: column;
-        margin-top: 5vh;
-        padding: 5px;
-    }
-    .card_info
-    {
-        width: 15vw;
- 
-    }
     
+    display: flex;
+    flex-direction:column;
 
-    
+    height: 50vh;
+    width: 50vw;
+    position: absolute;
+    top: 150px;
+    right:20px;
+    border-style: solid;
+    border-color: yellow;
+    padding: 3vw;
+    }
+
+    .input-text
+{
+    height: 5vh;
+    border-radius: 5px;
+    width: 40vw;
+    margin: 10px 0px 10px 0px;
+}
+
+.card_info
+{
+    height: 5vh;
+    border-radius: 5px;
+    width: 5vw;
+    margin: 10px 0px 10px 0px;
+}
+button
+{
+    position: absolute;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--Very_dark_violet) ;
+    width: 40vw;
+    height: 6vh;
+    font-family: var(--font2);
 
 
+}
 
 }
 
