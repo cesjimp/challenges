@@ -25,36 +25,36 @@
         <form >
             <div class="user_form">
                 <div class="nameandcardnumber">
-                    <span class="labelinput">CARDHOLDER NAME</span>
+                    <label for="nombre" class="labelinput">CARDHOLDER NAME</label>
                     <input type="text" id="nombre" placeholder="e.g CESAR JIMENEZ" class="input-text">
-                    <span class="labelinput">CARD NUMBER</span>
-                    <input type="text" id="nombre" placeholder="0000 0000 0000 0000" class="input-text">
-                    <span class="errormesage">error</span>
+                    <label for="cardnumber" class="labelinput">CARD NUMBER</label>
+                    <input type="text" id="cardnumber" placeholder="0000 0000 0000 0000" class="input-text">
+                    <span class="errormesage nodisplay">Wrong formmat, numbers only</span>
    
                 </div>
                 <div class="texto-fecha-codigo">
-                        <span  id="texto1" class="labelinput"> EXP. DATE (MM/YY)</span>
-                        <span  id="texto2" class="labelinput"> CVC</span>
+                        <label for="month"  id="texto1" class="labelinput"> EXP. DATE (MM/YY)</label>
+                        <label for="cvc"  id="texto2" class="labelinput"> CVC</label>
                 </div>
                 <div class="in-fecha-codigo"> 
                         <input type="text" maxlength="2" id="month" name="mes" class="card_info card1 infomonth" placeholder="MM">
                         <input type="text" maxlength="2" id="year" name="year" class="card_info card1 infoyear" placeholder="YY">
                         <input type="text" maxlength="3" id="cvc" name="cvc_code" class="card_info card2 infocvc" placeholder="123">
-                        <span class="errormesage" id="errorMM">errorMM</span>
-                        <span class="errormesage" id="erroryy">errorYY</span>
-                        <span class="errormesage"id="errorCVC">errorCVC</span>
+                        <span class="errormesage nodisplay" id="errorMM">Can`t be blank</span>    
+                        <span class="errormesage nodisplay"id="errorCVC">Can`t be blank</span>
                 </div>
                 <div class="botonenviar">
-                    <button type="submit">Confirm </button>
+                    <button type="submit" id="confirmButton">Confirm </button>
+                </div>
+                <div class="attribution">
+                    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                    Coded by  <a href="#"> cesjimp</a>.
                 </div>  
                         
-            </div>
-         
-         
-        </form>
-
-    
+            </div>                 
+        </form>    
     </div>
+
     </main>
 
 

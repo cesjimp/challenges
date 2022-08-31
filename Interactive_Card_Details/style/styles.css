@@ -94,14 +94,17 @@ body {
     font-weight:700;
     color: var(--Very_dark_violet);
     font-size: 1.2rem;
+    height: 30%;
 
 }
-.espacio
+
+.attribution
 {
     display: inline-block;
-    height: 100vh;
+    height: 10vh;
     
 }
+
 
 .user_form
     {
@@ -158,7 +161,18 @@ body {
     width: 100%;
     justify-content: center;
     align-items: center;
-    height: 20%;
+    height: 17%;
+
+}
+.attribution
+{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 3%;
+    font-family: var(--font1);
+    font-size: xx-small;
 
 }
 
@@ -188,9 +202,6 @@ input
         height: 35vh;
         background-color: var(--Very_dark_violet);
     }
-
-
-
    
 button
     {
@@ -206,7 +217,7 @@ button
     }
     .card_info
 {
-    height: 5vh;
+    height: 65%;
     border-radius: 5px;
     margin-top: 10px ;
     margin-bottom: 10px;   
@@ -273,9 +284,17 @@ button
     margin-right: 5px;
 }
 
-    
-    
+.errormesage
+{
+    color: var(--redinputerror);
+    font-family: var(--font2);
+    font-size: xx-small;
 
+}
+.nodisplay
+{
+    display:none
+}
 
 @media (min-width: 376px) 
 {
