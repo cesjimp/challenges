@@ -28,25 +28,146 @@ html
   }
 body {
     margin: 0;
-    background-color: var(--Light_grayish_violet);
+    background-color: var(--white);
   }
 
-span
+
+  img 
+  {
+      width: 240px;
+
+  }
+
+#back_card
+  {
+      position: relative;
+      top:3vh;
+      left:19vw;
+  }
+
+.textovercardfront ,.textovercardback 
 {
+    color: var(--white);
     font-family: var(--font2);
-    font-weight: 500;
-    margin: 10px 40px 0px 0px;
+    position:absolute;
 
 }
+#front_card
+  {
+      position: absolute;
+      top:18vh;
+      right:15vw;
+  }
+
+#cardhnumberfront
+{
+    top: 30vh;
+    left:18vw;
+    font-size: large;
+    font-family: var(--font2);
+}
+
+#cardholderfront
+{
+    top: 37vh;
+    left: 18vw;
+    font-size: x-small;
+    font-family: var(--font2);
+}
+
+#cardexpirationdate
+{
+    top: 37vh;
+    right: 19vw;
+    font-size: x-small;
+    font-family: var(--font2);
+}
+
+#cvcback
+{
+    top:14vh;
+    right:14vw
+}
+.labelinput
+{
+    font-family: var(--font2);
+    font-weight:700;
+    color: var(--Very_dark_violet);
+    font-size: 1.2rem;
+
+}
+.espacio
+{
+    display: inline-block;
+    height: 100vh;
+    
+}
+
+.user_form
+    {
+        display: flex;
+        flex-direction: column;
+        margin-top: 9vh;
+        height: 55vh;
+        width: 100vw;
+    }
 
 .nameandcardnumber
 {
     display: grid;
     justify-self: center;
     grid-template-columns: 90%;
-    grid-template-rows: 15% 35% 15% 35%;
+    grid-template-rows: 12% 33% 12% 33% 8%;
     justify-content: center;
-    width: 100%;    
+    width: 100%;
+    height: 50%;    
+}
+.texto-fecha-codigo
+{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: grid;
+    grid-template-columns: 50% 5% 5% 30%;
+    grid-template-rows: 100%;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    align-items: end;
+
+}
+.in-fecha-codigo
+{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-template-columns: 25% 25% 10% 30%;
+    grid-template-rows: 95% 5%;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+    align-items: end;
+
+}
+.botonenviar
+{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+
+}
+
+input
+{
+    font-family: var(--font2);
+    align-content: center;
+    border-style:solid;
+    border-color: var(--Light_grayish_violet);
 }
 
 .input-text
@@ -54,7 +175,8 @@ span
     height: 5vh;
     border-radius: 5px;
     width: 100%;
-    margin: 10px 0px 10px 0px;
+    height: 90%;
+
 }
 
 
@@ -67,86 +189,21 @@ span
         background-color: var(--Very_dark_violet);
     }
 
-img 
-    {
-        width: 240px;
-
-    }
-
-#back_card
-    {
-        position: relative;
-        top:3vh;
-        left:19vw;
-    }
-#front_card
-    {
-        position: absolute;
-        top:18vh;
-        right:15vw;
-    }
-.user_form
-    {
-        display: flex;
-        flex-direction: column;
-        margin-top: 9vh;
 
 
-        height: 45vh;
-        width: 100vw;
-    }
    
 button
     {
 
-        border-radius: 5px;
+        border-radius: 10px;
         color: white;
         background-color: var(--Very_dark_violet) ;
         width: 90%;
-        height: 6vh;
+        height: 70%;
         font-family: var(--font2);
 
 
     }
-
-.botonenviar
-{
-    display:flex;
-    width: 100%;
-    justify-content: center;
-
-}
-
-
-    .texto-fecha-codigo
-    {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        display: grid;
-        grid-template-columns: 50% 5% 5% 30%;
-        grid-template-rows: 100%;
-        justify-content: center;
-        width: 100%;
-
-    }
-
-    .in-fecha-codigo
-    {
-        display: grid;
-        height: 100%;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        grid-template-columns: 25% 25% 10% 30%;
-        grid-template-rows: 100%;
-        justify-content: center;
-        width: 100%;
-
-    }
-
     .card_info
 {
     height: 5vh;
@@ -165,12 +222,11 @@ button
         grid-column-start: 4;
         grid-row-start: 1;
     }
+
     .infomonth
     {
         grid-column-start: 1;
-        grid-column-end: 2;
         grid-row-start: 1;
-        grid-row-end: 2;
     }
 
     .infoyear
@@ -187,18 +243,31 @@ button
         grid-row-start: 1;
         grid-row-end: 2;
     }
-    .infomonth
+
+    #errorMM
     {
         grid-column-start: 1;
-        grid-row-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    #erroryy
+    {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    #errorCVC
+    {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
     }
 
-input
-{
-    font-family: var(--font2);
 
-    align-content: center;
-}
+
 .card1
 {
     margin-right: 5px;
@@ -207,106 +276,48 @@ input
     
     
 
-/* 
+
 @media (min-width: 376px) 
 {
 
-    .espacio
-    {
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        border-style: solid;
-        border-color:green;
-        height: 100vh;
-
-    }
     .background_card
     {
-
-        border-style: solid;
-        border-color: yellow;
-        width: 30vw;
+        width: 40vw;
         height: 100vh;
-        background-color: var(--Very_dark_violet);
     }
     img 
     {
-        width: 400px;
+        width: 320px;
 
+    }
+
+    #front_card
+    {
+        position: absolute;
+        top:18vh;
+        left:15vw;
     }
 
     #back_card
     {
         position: absolute;
-        top:62vh;
-        left:16vw;
+        top:55vh;
+        left:25vw;
     }
-    #front_card
-    {
-        position: relative;
-        top:28vh;
-        left:10vw;
-    }
-    .user_form
-    {
-    
+    .espacio
+{
     display: flex;
-    flex-direction:column;
-
-    height: 50vh;
-    width: 50vw;
-    position: absolute;
-    top: 150px;
-    right:20px;
-    border-style: solid;
-    border-color: yellow;
-    padding: 3vw;
+    height: 100vh;
+}
+.user_form
+    {
+        display: flex;
+        height: 60vh;
+        width: 35vw;
+        margin-top: 28vh;
+        margin-left:20vw ;
     }
-
-    .input-text
-{
-    height: 5vh;
-    border-radius: 5px;
-    width: 40vw;
-    margin: 10px 0px 10px 0px;
-}
-
-.inputs-fecha-codigo
-{
- display: flex;
- justify-content: space-evenly;
+   
 
 
 }
-
-
-.card_info
-{
-    height: 5vh;
-    border-radius: 5px;
-    width: 9vw;
-    margin-top: 10px ;
-    margin-bottom: 10px;   
-
-}
-.card2
-{
-    margin-left: 0px;
-    margin-right: 30px;
-}
-
-button
-{
-    position: absolute;
-    border-radius: 5px;
-    color: white;
-    background-color: var(--Very_dark_violet) ;
-    width: 40vw;
-    height: 6vh;
-    font-family: var(--font2);
-
-
-}
-
-}
- */

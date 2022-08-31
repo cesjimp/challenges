@@ -11,36 +11,48 @@
     <main>
     <div class="espacio">
         <div class="background_card">
-            <figure class="back_card card" >
+            <figure class="arreglocards" >
+
                 <img src="./images/bg-card-back.png" alt="backcard" id="back_card">
+
                 <img src="./images/bg-card-front.png" alt="frontcard" id="front_card">
+                <p class="textovercardfront" id="cardhnumberfront">0000 0000 0000 0000</p>
+                <p class="textovercardfront" id="cardholderfront">CESAR JIMENEZ PUENTES</p>
+                <p class="textovercardfront" id="cardexpirationdate">00/00</p>
+                <p class="textovercardback" id="cvcback">123</p>
             </figure>
         </div>
         <form >
             <div class="user_form">
                 <div class="nameandcardnumber">
-                    <span>CARDHOLDER NAME</span>
+                    <span class="labelinput">CARDHOLDER NAME</span>
                     <input type="text" id="nombre" placeholder="e.g CESAR JIMENEZ" class="input-text">
-                    <span>CARD NUMBER</span>
+                    <span class="labelinput">CARD NUMBER</span>
                     <input type="text" id="nombre" placeholder="0000 0000 0000 0000" class="input-text">
+                    <span class="errormesage">error</span>
    
                 </div>
                 <div class="texto-fecha-codigo">
-                        <span  id="texto1"> EXP. DATE(MM/YY)</span>
-                        <span  id="texto2"> CVC</span>
+                        <span  id="texto1" class="labelinput"> EXP. DATE (MM/YY)</span>
+                        <span  id="texto2" class="labelinput"> CVC</span>
                 </div>
                 <div class="in-fecha-codigo"> 
                         <input type="text" maxlength="2" id="month" name="mes" class="card_info card1 infomonth" placeholder="MM">
                         <input type="text" maxlength="2" id="year" name="year" class="card_info card1 infoyear" placeholder="YY">
                         <input type="text" maxlength="3" id="cvc" name="cvc_code" class="card_info card2 infocvc" placeholder="123">
+                        <span class="errormesage" id="errorMM">errorMM</span>
+                        <span class="errormesage" id="erroryy">errorYY</span>
+                        <span class="errormesage"id="errorCVC">errorCVC</span>
                 </div>
+                <div class="botonenviar">
+                    <button type="submit">Confirm </button>
+                </div>  
                         
-                </div>
-            </div>            
+            </div>
+         
+         
         </form>
-        <div class="botonenviar">
-            <button type="submit">Confirm </button>
-        </div>
+
     
     </div>
     </main>
