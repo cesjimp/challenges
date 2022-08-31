@@ -16,27 +16,32 @@
                 <img src="./images/bg-card-front.png" alt="frontcard" id="front_card">
             </figure>
         </div>
-        <form class="user_form">
-            <span>CARDHOLDER NAME</span>
-            <p></p>
-            <p></p>
-            <input type="text" id="nombre" placeholder="e.g CESAR JIMENEZ" class="input-text">
-            <span>CARD NUMBER</span>
-            <input type="text" id="nombre" placeholder="0000 0000 0000 0000" class="input-text">
-            <label for="mes">
-                <span class="expiration-date"> EXP. DATE(MM/YY)</span>
-                <span class="expiration-date"> CVC</span>
-
-                <p></p>
-                    <input type="text" maxlength="2" id="month" name="mes" class="card_info">
-                    <input type="text" maxlength="2" id="year" name="year" class="card_info">
-                
-                <span class="verification-code">
-                    <input type="text" maxlength="3" id="cvc" name="cvc_code" class="card_info">
-                </span>
-                <P></P>
-                <button type="submit">Confirm </button>
+        <form >
+            <div class="user_form">
+                <div class="nameandcardnumber">
+                    <span>CARDHOLDER NAME</span>
+                    <input type="text" id="nombre" placeholder="e.g CESAR JIMENEZ" class="input-text">
+                    <span>CARD NUMBER</span>
+                    <input type="text" id="nombre" placeholder="0000 0000 0000 0000" class="input-text">
+   
+                </div>
+                <div class="texto-fecha-codigo">
+                        <span  id="texto1"> EXP. DATE(MM/YY)</span>
+                        <span  id="texto2"> CVC</span>
+                </div>
+                <div class="in-fecha-codigo"> 
+                        <input type="text" maxlength="2" id="month" name="mes" class="card_info card1 infomonth" placeholder="MM">
+                        <input type="text" maxlength="2" id="year" name="year" class="card_info card1 infoyear" placeholder="YY">
+                        <input type="text" maxlength="3" id="cvc" name="cvc_code" class="card_info card2 infocvc" placeholder="123">
+                </div>
+                        
+                </div>
+            </div>            
         </form>
+        <div class="botonenviar">
+            <button type="submit">Confirm </button>
+        </div>
+    
     </div>
     </main>
 
