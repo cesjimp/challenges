@@ -22,29 +22,33 @@
                 <p class="textovercardback" id="cvcback">123</p>
             </figure>
         </div>
-        <form >
+        <form id="formulario">
             <div class="user_form">
-                <div class="nameandcardnumber">
-                    <label for="nombre" class="labelinput">CARDHOLDER NAME</label>
-                    <input type="text" id="nombre" placeholder="e.g CESAR JIMENEZ" class="input-text">
-                    <label for="cardnumber" class="labelinput">CARD NUMBER</label>
-                    <input type="text" id="cardnumber" placeholder="0000 0000 0000 0000" class="input-text">
-                    <span class="errormesage nodisplay">Wrong formmat, numbers only</span>
-   
+                <div class="nombreynumero">
+                    <div class="infocard">
+                        <label for="nombre" class="labelinput1">CARDHOLDER NAME</label>
+                        <input type="text" id="nombre" placeholder="e.g CESAR JIMENEZ" class="input-text ">
+                        <span id="errorNombre" class="errormesage nodisplay">review</span>
+                    </div>
+                    <div class="infocard">
+                        <label for="cardnumber" class="labelinput1">CARD NUMBER</label>
+                        <input type="text" id="cardnumber" placeholder="0000 0000 0000 0000" class="input-text ">
+                        <span id="errorNumeroTarjeta" class="errormesage nodisplay">review</span>
+                    </div>  
                 </div>
                 <div class="texto-fecha-codigo">
                         <label for="month"  id="texto1" class="labelinput"> EXP. DATE (MM/YY)</label>
                         <label for="cvc"  id="texto2" class="labelinput"> CVC</label>
                 </div>
                 <div class="in-fecha-codigo"> 
-                        <input type="text" maxlength="2" id="month" name="mes" class="card_info card1 infomonth" placeholder="MM">
-                        <input type="text" maxlength="2" id="year" name="year" class="card_info card1 infoyear" placeholder="YY">
-                        <input type="text" maxlength="3" id="cvc" name="cvc_code" class="card_info card2 infocvc" placeholder="123">
-                        <span class="errormesage nodisplay" id="errorMM">Can`t be blank</span>    
-                        <span class="errormesage nodisplay"id="errorCVC">Can`t be blank</span>
+                        <input type="text" maxlength="2" id="month" name="mes" class="card_info card1 infomonth " placeholder="MM">
+                        <input type="text" maxlength="2" id="year" name="year" class="card_info card1 infoyear " placeholder="YY">
+                        <input type="text" maxlength="3" id="cvc" name="cvc_code" class="card_info card2 infocvc " placeholder="123">
+                        <span id="errorFecha" class="errormesage nodisplay">review MM / YY</span>    
+                        <span id="errorCVCcode" class="errormesage nodisplay">review</span>
                 </div>
                 <div class="botonenviar">
-                    <button type="submit" id="confirmButton">Confirm </button>
+                    <button id="confirmButton">Confirm </button>
                 </div>
                 <div class="attribution">
                     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
