@@ -40,9 +40,9 @@ body {
 
 #back_card
   {
-      position: relative;
-      top:3vh;
-      left:19vw;
+      position: absolute;
+      top:7vh;
+      left:17vw;
   }
 
 .textovercardfront ,.textovercardback 
@@ -55,14 +55,14 @@ body {
 #front_card
   {
       position: absolute;
-      top:18vh;
-      right:15vw;
+      top: 20vh;
+      right:17vw;
   }
 
 #cardhnumberfront
 {
     top: 30vh;
-    left:18vw;
+    left:17vw;
     font-size: large;
     font-family: var(--font2);
 }
@@ -70,7 +70,7 @@ body {
 #cardholderfront
 {
     top: 37vh;
-    left: 18vw;
+    left: 15vw;
     font-size: x-small;
     font-family: var(--font2);
 }
@@ -78,15 +78,15 @@ body {
 #cardexpirationdate
 {
     top: 37vh;
-    right: 19vw;
+    right: 22vw;
     font-size: x-small;
     font-family: var(--font2);
 }
 
 #cvcback
 {
-    top:14vh;
-    right:14vw
+    top:18vh;
+    right:16vw
 }
 .labelinput1
 {
@@ -336,6 +336,33 @@ button
         margin-top: 28vh;
         margin-left:20vw ;
     }
+    #cardhnumberfront
+{
+    top: 30vh;
+    left:18vw;
+
+}
+
+#cardholderfront
+{
+    top: 37vh;
+    left: 18vw;
+
+}
+
+#cardexpirationdate
+{
+    top: 37vh;
+    left: 40vw;
+
+}
+
+#cvcback
+{
+    top: 71vh;
+    left: 50vw;
+
+}
    
 
 
