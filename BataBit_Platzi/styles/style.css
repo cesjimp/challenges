@@ -45,16 +45,16 @@ header{
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    min-width: 32rem;
-    height: 33.4rem;
+    min-width: 320px;
+    height: 334px;
     text-align: center;
     background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);;
 }
 header img{
-    width: 15rem;
-    height: 2.4rem;
+    width: 150px;
+    height: 240px;
     align-self: center;
-    margin-top: 6.0rem;
+    margin-top: 60px;
 }
 
 .header--title-container{
@@ -64,7 +64,7 @@ header img{
     height: 218px;
     align-self: center;
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 40px;
 
 
 }
@@ -74,16 +74,17 @@ header img{
     font-style: normal;
     font-weight: bold;
     font-size: 2.4rem;
-    line-height: 2.6rem;
+    line-height: 26px;
     color: var(--justwhite);
 
 }
 header p{
-    margin-top: 2.5rem;
+    margin-top: 25px;
+    margin-bottom: 50px;
     font-style: normal;
     font-weight: 500;
     font-size: 1.4rem;
-    line-height: 1.8rem;
+    line-height: 18px;
     color: var(--soft-orange);
 
 }
@@ -91,11 +92,11 @@ header p{
     position: absolute;
     left: calc(50% - 11.5rem);
     display: block;
-    top: 27rem;
-    margin-top: 3.5rem;
-    width: 23rem;
-    height: 4.8rem;
-    padding: 1.5rem;
+    top: 280px;
+    margin-top: 35px;
+    width: 230px;
+    height: 48px;
+    padding: 15px;
     background-color: var(--offwhite);
     /*sombra*/
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
@@ -111,7 +112,172 @@ header span
 {
     background-image: url("../assets/icons/arrowdown.svg");
     display: inline-block;
-    width: 1.3rem;
-    height: 0.8rem;
-    margin-left: 0.rem;
+    width: 13px;
+    height: 8px;
+
+}
+
+main
+{
+    height: auto;
+    width:100%;
+    background-color: var(--offwhite);
+    min-width: 288px;
+    max-width: 900px;
+}
+.main-exchange-container{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px ;
+    text-align: center;
+
+}
+
+.main-exchange-container--title
+{
+    width: 90%;
+    margin: 0 auto; /* COMO EL ANCHO DEL ELEMENTO NO ES DEL 100% ASI SE GARANTIZA QUE QUEDE CENTRADO*/
+}
+
+.main-exchange-container .backgroundImg{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url(../assets/images/bitcoin.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-exchange-container h2{
+    font-size: 24px;
+    color: var(--warm-black);
+    margin-bottom: 30px;
+    font-weight: bold;
+    line-height: 26px;
+}
+
+.main-exchange-container p{
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 18px;
+    color: #757575;
+    margin-bottom: 48px;
+
+}
+
+.main-tables-container{
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+.main-tables-container__h3__monedas{
+
+    font-weight: bold;
+    color: var(--bitcoin-orange);
+    font-size: 1.8rem;
+    text-align: start;
+    margin-bottom: 12px;
+    
+}
+
+.main-tables-container__h3__comisiones{
+
+    font-weight: bold;
+    color: var(--secondary-blue);
+    font-size: 1.8rem;
+    text-align: start;
+    margin-bottom: 12px;
+    
+}
+.main-tables-container__Monedas
+{
+
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 30% 20%;
+    grid-template-rows: repeat(5, 39px);
+    background-color: var(--justwhite);
+}
+
+.main-tables-container__Comisiones
+{
+
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(5, 39px);
+    background-color: var(--justwhite);
+}
+.main-tables-container__Monedas h4 , .main-tables-container__Comisiones h4{
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #B5B0AC;
+    text-align: start;
+    line-height: 17px;
+    
+}
+.main-tables-container__Monedas h5, .main-tables-container__Comisiones h5{
+
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 17px;
+    text-align: center;
+    color: #757575;
+    letter-spacing: -0.02em;
+
+    
+}
+
+
+.main-tables-span__tenderdown{
+    width: 40%;
+    height: 40%;
+    background-image: url(../assets/icons/trending-down\ 1.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.main-tables-span__tenderup{
+    width: 40%;
+    height: 40%;
+    background-image: url(../assets/icons/trending-up\ 1.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.main-tables-container p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 1.2rem;
+    line-height: 15px;
+    width: 173px;
+    height: 31px;
+    text-align: center;
+    padding: 8px;
+    gap: 10px;
+}
+
+
+.main-tables-container__p-monedas
+{
+    background-color: var(--soft-orange);
+}
+
+.main-tables-container__p-comisiones
+{
+    background-color: var(--soft-blue);
 }
