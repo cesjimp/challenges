@@ -140,6 +140,7 @@ main
     margin: 0 auto; /* COMO EL ANCHO DEL ELEMENTO NO ES DEL 100% ASI SE GARANTIZA QUE QUEDE CENTRADO*/
 }
 
+
 .main-exchange-container .backgroundImg{
     width: 200px;
     height: 200px;
@@ -172,6 +173,8 @@ main
     width: 60%;
     margin: 0 auto;
 
+
+
 }
 
 .main-tables-container__h3__monedas{
@@ -197,10 +200,14 @@ main
 {
 
     display: grid;
+    align-items: center;
     width: 100%;
     grid-template-columns: 50% 30% 20%;
-    grid-template-rows: repeat(5, 39px);
+    grid-template-rows: repeat(4, 39px);
     background-color: var(--justwhite);
+    border-radius: 8px;
+    margin-bottom: 12px;
+
 }
 
 .main-tables-container__Comisiones
@@ -209,8 +216,12 @@ main
     display: grid;
     width: 100%;
     grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(5, 39px);
+    grid-template-rows: repeat(4, 39px);
     background-color: var(--justwhite);
+    border-radius: 8px;
+    margin-bottom: 12px;
+
+
 }
 .main-tables-container__Monedas h4 , .main-tables-container__Comisiones h4{
 
@@ -221,6 +232,7 @@ main
     color: #B5B0AC;
     text-align: start;
     line-height: 17px;
+    padding: 10px;
     
 }
 .main-tables-container__Monedas h5, .main-tables-container__Comisiones h5{
@@ -234,6 +246,7 @@ main
     text-align: center;
     color: #757575;
     letter-spacing: -0.02em;
+    padding: 10px;
 
     
 }
@@ -266,9 +279,14 @@ main
     line-height: 15px;
     width: 173px;
     height: 31px;
-    text-align: center;
     padding: 8px;
     gap: 10px;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+
+
 }
 
 
