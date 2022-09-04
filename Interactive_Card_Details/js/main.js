@@ -66,8 +66,6 @@ function enviarFormulario(event)
 
 }
 
-
-
 function validarNombre()
 {
     var valoresAceptados = /^[a-zA-Z ""]+$/;
