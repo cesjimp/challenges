@@ -150,9 +150,10 @@ main
 .main-exchange-container h2{
     font-size: 24px;
     color: var(--warm-black);
-    margin-bottom: 30px;
+    margin: 0px auto 30px auto;
     font-weight: bold;
     line-height: 26px;
+    width: 80%;
 }
 
 .main-exchange-container p{
@@ -160,9 +161,13 @@ main
     font-size: 1.4rem;
     line-height: 18px;
     color: #757575;
-    margin-bottom: 48px;
+    margin: 0 auto 48px auto;
+    width: 80%;
 
+    
 }
+
+
 
 .main-tables-container{
     width: 60%;
@@ -349,24 +354,21 @@ main
 }
 
 .contenedor_cajas{
-    display: block;
-    margin: 0 auto;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-    width: 90%;
+    display: flex;
+    flex-direction: column;    
+
 }
 
 
 .main-product-detail_caja{
 
-    display: flex;
-    flex-direction: column;
+
     background-color: var(--warm-black1);
-    margin-bottom: 16px;
+    margin:0 auto 16px auto;
     border-radius: 5px;
     height: 152px;
-    width: 100%;
+    width: 80%;
+    
 
 }
 
