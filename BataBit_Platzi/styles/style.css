@@ -457,6 +457,117 @@ main
 
 
 
+
+.main-product-planes{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-product-planes h2{
+    width: 90%;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: bold;
+    color: var(--warm-black);
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 64px;
+}
+
+.main-product-planes h3{
+    width: 90%;
+    font-size: 1.4rem;
+    line-height: rem;
+    font-weight: 500;
+    color: #757575;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+.main-product-planes--boton{
+    position: relative;
+    top: -6px;
+    left: calc(50% - 95px);
+    height: 31px;
+    width: 101px;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    align-self: center;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--justwhite);
+    margin: 8px;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px;
+    font-weight: bold;
+
+}
+
+.contenedor-planes{
+
+    width: 90%;
+    margin: 0 auto;
+
+
+    
+}
+
+.contenedor-planes--detalle{
+
+    display: block;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    margin-top: 50px;
+    border-radius: 8px;
+    width: 190px;
+    height: 247px;
+    margin-left: calc(50% - 90px);
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+
+}
+
+.contenedor-planes--detalle h4{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #000000;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.precio-plan--simbolo{
+    position: absolute;
+    margin-top: 11px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    left: calc(50% - 39px)
+
+}
+
+.precio-plan{
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 6.3rem;
+
+
+
+
+
+
+}
+
+
+
+
+
 footer{
 
     background-color: #F7931A;
