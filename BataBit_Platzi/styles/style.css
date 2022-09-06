@@ -43,8 +43,6 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 288px;
-    max-width: 900px;
     width: 100%;
     height: 334px;
     text-align: center;
@@ -123,8 +121,6 @@ main
     flex-direction: column;
     height: auto;
     width:100%;
-    min-width: 288px;
-    max-width: 900px;
     background-color: var(--offwhite);
 
 
@@ -176,6 +172,8 @@ main
 
     .main-tables-container{
         display: flex;
+        min-width: 288px;
+        max-width: 900px;
         overflow-x: scroll;
         overscroll-behavior-x:contain;
         scroll-snap-type: x proximity;
@@ -185,6 +183,7 @@ main
 
     .tablas{
         position: relative;
+
         scroll-snap-align: center;
         margin: 0px 20px;
         width: 100%;
@@ -312,8 +311,7 @@ main
 
 .main-product-detail{
     
-    min-width: 288px;
-    max-width: 900px; /*esto hace que el contenedor se ajsute hasta los 900px*/
+ /*esto hace que el contenedor se ajsute hasta los 900px*/
     background-color: var(--warm-black);
     width: 100%;
     align-self: center;
@@ -375,6 +373,7 @@ main
     border-radius: 5px;
     height: 152px;
     width: 80%;
+    max-width: 380px;
     
 
 }
@@ -443,8 +442,7 @@ main
 
 
 .main-product-imagen{
-    min-width: 288px;
-    max-width: 900px; /*esto hace que el contenedor se ajsute hasta los 900px*/
+ /*esto hace que el contenedor se ajsute hasta los 900px*/
     height: 387px;
     background-image: url(../assets/images/bitcoinbaby\ 1_2x.jpg);
     background-size: cover;
@@ -476,6 +474,7 @@ main
 
 .main-product-planes h2{
 
+    width:95%;
     font-size: 2.4rem;
     line-height: 2.6rem;
     font-weight: bold;
@@ -516,6 +515,7 @@ main
 .contenedor-planes-slider{
 
     display:flex;
+    max-width: 100%;
     gap: 20px;
     height: 316px;
     /* con esta seccion se hace un scroll horizontal */
@@ -621,8 +621,7 @@ main
 
 
 footer{
-    min-width: 288px;
-    max-width: 900px;
+
     width: 100%;
     background-color: #F7931A;
     height: 150px;
