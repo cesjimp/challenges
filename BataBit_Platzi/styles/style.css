@@ -175,11 +175,19 @@ main
 
 
     .main-tables-container{
+        display: flex;
+        overflow-x: scroll;
+        overscroll-behavior-x:contain;
+        scroll-snap-type: x proximity;
         width: 60%;
         margin: 0 auto;
+    }
 
-
-
+    .tablas{
+        position: relative;
+        scroll-snap-align: center;
+        margin: 0px 20px;
+        width: 100%;
     }
 
     .main-tables-container__h3__monedas{
@@ -188,7 +196,7 @@ main
         color: var(--bitcoin-orange);
         font-size: 1.8rem;
         text-align: start;
-        margin-bottom: 12px;
+
         
     }
 
@@ -198,7 +206,7 @@ main
         color: var(--secondary-blue);
         font-size: 1.8rem;
         text-align: start;
-        margin-bottom: 12px;
+
         
     }
     .main-tables-container__Monedas
@@ -206,7 +214,7 @@ main
 
         display: grid;
         align-items: center;
-        width: 100%;
+
         grid-template-columns: 50% 30% 20%;
         grid-template-rows: repeat(4, 39px);
         background-color: var(--justwhite);
@@ -219,7 +227,7 @@ main
     {
 
         display: grid;
-        width: 100%;
+
         grid-template-columns: 50% 50%;
         grid-template-rows: repeat(4, 39px);
         background-color: var(--justwhite);
@@ -610,14 +618,6 @@ main
     background-repeat: no-repeat;
     vertical-align: text-top;
 }
-
-
-
-
-
-
-
-
 
 
 footer{
