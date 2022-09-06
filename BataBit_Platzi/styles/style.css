@@ -456,15 +456,18 @@ main
 }
 
 
-
-
 .main-product-planes{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+
 }
 
 .main-product-planes h2{
-    width: 90%;
+
     font-size: 2.4rem;
     line-height: 2.6rem;
     font-weight: bold;
@@ -472,10 +475,11 @@ main
     text-align: center;
     margin: 0 auto;
     margin-top: 64px;
+
 }
 
 .main-product-planes h3{
-    width: 90%;
+
     font-size: 1.4rem;
     line-height: rem;
     font-weight: 500;
@@ -483,49 +487,54 @@ main
     text-align: center;
     margin: 0 auto;
     margin-top: 24px;
+    padding: 24px 15px;
 }
 .main-product-planes--boton{
     position: relative;
+
     top: -6px;
-    left: calc(50% - 95px);
-    height: 31px;
-    width: 101px;
     background-color: var(--bitcoin-orange);
     border-radius: 8px;
-    align-self: center;
     font-size: 1.2rem;
     line-height: 1.5rem;
     color: var(--justwhite);
-    margin: 8px;
     text-decoration: none;
     text-align: center;
-    padding: 8px;
+    padding: 10px;
     font-weight: bold;
 
 }
 
-.contenedor-planes{
+.contenedor-planes-slider{
 
-    width: 90%;
-    margin: 0 auto;
-
-
-    
+    display:flex;
+    gap: 20px;
+    height: 316px;
+    /* con esta seccion se hace un scroll horizontal */
+    overflow-x: scroll;
+    overscroll-behavior-x:contain;
+    scroll-snap-type: x proximity;
+  
 }
 
 .contenedor-planes--detalle{
 
-    display: block;
+
+    position: relative;
+     /* con esta seccion se hace un scroll horizontal */
+    scroll-snap-align: center;
+    margin-left: 10px;
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
-    margin-top: 50px;
+    margin: 50px auto 0; 
     border-radius: 8px;
-    width: 190px;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
     height: 247px;
-    margin-left: calc(50% - 90px);
     justify-self: center;
     align-self: center;
     text-align: center;
-    margin-bottom: 64px;
+
 
 }
 
@@ -540,25 +549,29 @@ main
     text-align: center;
 }
 
-.precio-plan--simbolo{
-    position: absolute;
-    margin-top: 11px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    left: calc(50% - 39px)
-
-}
-
 .precio-plan{
 
+    position: relative;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 5.2rem;
     line-height: 6.3rem;
     margin-bottom: 16px;
+
 }
+
+.precio-plan--simbolo{
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    left: -11px;
+    top: 14px;
+
+}
+
+
 
 .planes--promocion{
     font-family: 'Inter', sans-serif;
@@ -569,7 +582,7 @@ main
 }
 
 .seleccionar-plan--boton{
-    display: block;
+
     position: absolute;
     width: 151px;
     height: 48px;
@@ -581,29 +594,29 @@ main
     border-radius: 4px;
     border: 2px solid;
     border-color: var(--bitcoin-orange);
-    justify-self: center;
-    align-self: center;
-    left: calc(50% - 69px) ;
-
-
-
+    left: calc(50% - 75px);
+    padding: 12px;
 }
 
 .arrow-boton
 {
 
-    display: inline-block;
-    position: relative;
-    top: 9px;
-    width: 24px;
-    height: 24px;
+    display: inline-block;  
+    width: 20px;
+    height: 20px;
     background-image: url(../assets/icons/arrow-right1.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-
+    vertical-align: text-top;
 }
+
+
+
+
+
+
+
 
 
 
@@ -630,10 +643,6 @@ footer{
     align-self: center;
     justify-self: center;
     margin-left: 65px;
-
-
-    
-
 
 }
 
