@@ -5,39 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/styles.css">
+    <link rel="stylesheet" href="./style/style_768.css" media="(min-width:768px)">
 </head>
 <body>
-    <main>
-    <div class="espacio">
-        <div class="background_card">
-            <div class="backcard">
-                <span>000</span>
-            </div>
-            <div class="frontcard">
-                <span class="cardnumber">0000 0000 0000 0000</span>
-                <span class="name">CESAR JIMENEZ PUENTES</span>
-                <span class="date">00/00</span>
+
+    <div class="encabezado">
+            <div class="background_card">
+                <div class="backcard">
+                    <span>000</span>
+                </div>
+                <div class="frontcard">
+                    <span class="cardnumber">0000 0000 0000 0000</span>
+                    <span class="name">CESAR JIMENEZ PUENTES</span>
+                    <span class="date">00/00</span>
+                </div>    
             </div>
 
-        </div>
+    </div>
+    <main>
+
         <form id="formulario">
             <div class="user_form">
-                <div class="nombreynumero">
-                    <div class="infocard">
-                        <label for="nombre" class="labelinput1">CARDHOLDER NAME</label>
+                <div class="infocard">
+                        <label for="nombre" class="labelinput">CARDHOLDER NAME</label>
                         <input type="text" id="nombre" placeholder="e.g CESAR JIMENEZ" class="input-text ">
                         <span id="errorNombre" class="errormesage nodisplay">review</span>
-                    </div>
-                    <div class="infocard">
-                        <label for="cardnumber" class="labelinput1">CARD NUMBER</label>
+                </div>
+                <div class="infocard">
+                        <label for="cardnumber" class="labelinput">CARD NUMBER</label>
                         <input type="text" id="cardnumber" placeholder="0000 0000 0000 0000" class="input-text ">
                         <span id="errorNumeroTarjeta" class="errormesage nodisplay">review</span>
-                    </div>  
                 </div>
                 <div class="texto-fecha-codigo">
-                        <label for="month"  id="texto1" class="labelinput"> EXP. DATE (MM/YY)</label>
-                        <label for="cvc"  id="texto2" class="labelinput"> CVC</label>
+                        <label for="month"  id="texto1" class="labelinput label_date"> EXP. DATE (MM/YY)</label>
+                        <label for="cvc"  id="texto2" class="labelinput label_cvc"> CVC</label>
                 </div>
                 <div class="in-fecha-codigo"> 
                         <input type="text" maxlength="2" id="month" name="mes" class="card_info card1 infomonth " placeholder="MM">
@@ -49,10 +54,10 @@
                 <div class="botonenviar">
                     <button id="confirmButton">Confirm </button>
                 </div>
-                <div class="attribution">
+                <footer class="attribution">
                     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
                     Coded by  <a href="#"> cesjimp</a>.
-                </div>  
+                </footer>  
                         
             </div>                 
         </form>    

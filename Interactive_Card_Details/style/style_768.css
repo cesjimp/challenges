@@ -1,0 +1,60 @@
+body
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.encabezado
+{
+    display:flex;
+    flex-direction: column;  
+    width:35vw;
+    height: 100vh;
+    background-color: var(--Very_dark_violet);
+    max-width:380px ;
+
+  
+}
+
+.backcard
+{
+    display: flex;
+    position: relative;
+    top: 350px;
+    width: 300px;
+    height: 180px;
+  
+}
+
+.frontcard
+{
+    display: flex;
+    position: absolute;
+    top: 130px;
+    left: 15px;
+    width: 300px;
+    height: 180px;
+}
+
+
+form
+{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70vw;
+
+    
+}
+
+.user_form
+{
+    height: 50%;
+    position: relative;
+    margin: auto 0;
+    max-width:300px ;
+
+
+}
+
+
