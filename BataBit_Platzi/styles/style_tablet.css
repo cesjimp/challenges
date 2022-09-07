@@ -1,0 +1,39 @@
+header img{
+    width: 250px;
+    height: 240px;
+
+}
+
+
+.contenedor_cajas{
+    width: 930px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    
+}
+
+.main-product-planes h2{
+
+
+    font-size: 3.0rem;
+
+}
+.main-product-planes h3{
+
+    font-size: 2.0rem;
+
+}
+
+.header--title-container h1{
+
+
+    font-size: 3.0rem;
+
+
+}
+header p{
+
+    font-size: 2.0rem;
+}
