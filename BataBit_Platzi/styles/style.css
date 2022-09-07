@@ -293,7 +293,7 @@ main
         height: 31px;
         padding: 8px;
         gap: 10px;
-        border-radius: px;
+        border-radius: 8px;
         margin: 0 auto;
         margin-bottom: 10px;
     }
@@ -488,7 +488,7 @@ main
 .main-product-planes h3{
 
     font-size: 1.4rem;
-    line-height: rem;
+    line-height: 1.8rem;
     font-weight: 500;
     color: #757575;
     text-align: center;
@@ -498,7 +498,6 @@ main
 }
 .main-product-planes--boton{
     position: relative;
-
     top: -6px;
     background-color: var(--bitcoin-orange);
     border-radius: 8px;
