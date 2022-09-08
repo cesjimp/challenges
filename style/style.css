@@ -1,0 +1,81 @@
+:root{
+    /*Aca van las variables*/
+    --bitcoin-orange:#F7931A;
+    --soft-orange:#FFE9D5;
+    --secondary-blue:#1A9AF7;
+    --soft-blue:#E7F5FF;
+    --warm-black:#201E1C;
+    --warm-black1:#282623;
+    --grey:#BABABA;
+    --offwhite:#FAF8F7;
+    --justwhite:#FFFFFF;
+
+    /*fuentes*/
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+}
+
+html
+{
+    font-size: 62.5%;
+    font-family:'Lucida Sans';
+    background-color: white
+}
+
+.header__social-network__list
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  
+
+}
+
+.inactive
+{
+    display: none;
+
+}
+
+.header__social-network-imglinks img{
+    width: 30px;
+
+}
+
+
+.header__social-network__list
+{
+    font-size: 1.6rem;
+    border: solid;
+    height: 60px;
+
+
+}
+
+.social-network_item a
+{
+    width: 50px;
+    height: 50px;
+    border: solid;
+    text-decoration: none;
+
+}
+
+.social-network_icon
+{
+    height: 60px;
+    width: 60px;
+    background-image: url(../assets/icons/linkedin_black.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+
+
+
