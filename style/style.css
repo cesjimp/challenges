@@ -27,55 +27,88 @@ html
     background-color: white
 }
 
-.header__social-network__list
+.header
 {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    width: 100%;
-  
-
+    justify-content: space-between;
+    padding: 10px;
+    border: solid;
+    height: 50px;
+    align-items: center;
+    background-color: #1A9AF7;
 }
+
+.presentation
+{
+    width: 60%;
+    min-width: 200px;
+    max-width: 280px;
+    display: flex;
+    flex-direction:column;
+   
+}
+
+
 
 .inactive
 {
     display: none;
+}
+
+
+.header__social-network-imglinks{
+    display: flex;
+    flex-direction: row;
+    margin: 2px;
+    justify-content: space-around;
+    width: 50%;
+    min-width: 100px;
+    max-width: 180px;
+    
+
 
 }
 
 .header__social-network-imglinks img{
-    width: 30px;
 
-}
-
-
-.header__social-network__list
-{
-    font-size: 1.6rem;
+    width: 80%;
+    min-width: 30px;
+    max-width: 40px;
+    margin: 2px;
     border: solid;
-    height: 60px;
+    justify-content: space-around;
 
 
 }
 
-.social-network_item a
+
+
+.projects-done
 {
-    width: 50px;
-    height: 50px;
     border: solid;
-    text-decoration: none;
-
+    width: 40vw;
+    background-color: #1A9AF7;
+    margin-top: 15px;
+    border-radius: 15px;
 }
 
-.social-network_icon
+aside
 {
-    height: 60px;
-    width: 60px;
-    background-image: url(../assets/icons/linkedin_black.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+
 }
+aside a
+{
+    width: 80%;
+    border: solid;
+    background-color: white;
+    text-decoration: none;   
+    padding: 5px;
+    margin: 5px;
+    border-radius: 8px;
+    align-self: center;
 
-
-
+}
