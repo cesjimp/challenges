@@ -84,16 +84,9 @@ nav .nav-menu
     padding: 5px;
 }
 
-.nav-menu li
-{
-    padding: 10px;
-    background-color:brown;
-    border-radius: 8px;
-    text-decoration: none;
 
-}
 
-.nav-menu a
+.nav-menu 
 {
 
     font-size: 1.4rem;
@@ -101,6 +94,28 @@ nav .nav-menu
 
 }
 
+
+.nav-menu li:nth-child(1)
+{
+
+   background-color: red;
+
+}
+
+.nav-menu li:nth-child(2)
+{
+    background-color: black
+}
+
+.nav-menu li:nth-last-child(1)
+{
+    background-color: yellow
+}
+
+.nav-menu li:first-letter
+{
+color: #F7931A;
+}
 
 .sections_aside-main
 {
