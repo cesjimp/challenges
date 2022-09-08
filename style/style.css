@@ -34,7 +34,6 @@ html
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
-    border: solid;
     height: 50px;
     align-items: center;
     background-color: #1A9AF7;
@@ -42,7 +41,8 @@ html
 
 .presentation
 {
-    width: 60%;
+
+    width: 50%;
     min-width: 200px;
     max-width: 280px;
     display: flex;
@@ -61,12 +61,6 @@ html
 .header__social-network-imglinks{
     display: flex;
     flex-direction: row;
-    margin: 2px;
-    justify-content: space-around;
-    width: 50%;
-    min-width: 100px;
-    max-width: 180px;
-    
 
 
 }
@@ -76,39 +70,106 @@ html
     width: 80%;
     min-width: 30px;
     max-width: 40px;
-    margin: 2px;
-    border: solid;
+    padding: 3px;
     justify-content: space-around;
 
-
 }
 
-
-
-.projects-done
+nav .nav-menu
 {
-    border: solid;
-    width: 40vw;
-    background-color: #1A9AF7;
-    margin-top: 15px;
-    border-radius: 15px;
+    width: 100%;
+    display: inline-flex;
+    justify-content:space-evenly;
+    height: 45px;
+    padding: 5px;
 }
 
-aside
+.nav-menu li
+{
+    padding: 10px;
+    background-color:brown;
+    border-radius: 8px;
+    text-decoration: none;
+
+}
+
+.nav-menu a
+{
+
+    font-size: 1.4rem;
+    text-decoration: none;
+
+}
+
+
+.sections_aside-main
+{
+    width: 100%;
+    display:inline-flex;
+    flex-direction: row;
+}
+
+
+.projects-done__boton-container
 {
     display: flex;
     flex-direction: column;
+    width: 20%;
+    min-width: 120px;
+    background-color: #1A9AF7;
+    margin-top: 5px;
+    border-radius: 15px;
+    
+}
+.main-projects-containers
+{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 5px;
+
 
 }
+
+.main-projects-containers p
+{
+    font-size: 1.8rem;
+}
+
+
 aside a
 {
-    width: 80%;
-    border: solid;
+
+    min-width: 100px;
+    max-width: 180px;
     background-color: white;
     text-decoration: none;   
-    padding: 5px;
-    margin: 5px;
     border-radius: 8px;
-    align-self: center;
+    padding: 10px;
+    margin: 10px auto 0px;
+    height: 40px;
+    font-size: 1.2rem;
 
 }
+
+
+.projects-done-_preview-container
+{
+
+    display: flex;
+    flex-direction:column;
+
+
+
+}
+
+.projects-done-_preview-container img
+{
+    width: 40% ;
+
+}
+
+
+
+
+
