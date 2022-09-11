@@ -42,9 +42,9 @@ width: 100vw;
     /* transition: transform 2s;
     transition-timing-function:cubic-bezier(0.83, 0, 0.17, 1) ; */
     animation-name: subir-conejo;
-
     animation-iteration-count: infinite;
-    transition: transform 1s;
+    animation-timing-function:cubic-bezier(0.6, 0.04, 0.98, 0.335);
+
     
 }
 @keyframes subir-conejo
@@ -52,7 +52,6 @@ width: 100vw;
     0%
     {
         transform: translateY(0px);
-
     }
     5%
     {
