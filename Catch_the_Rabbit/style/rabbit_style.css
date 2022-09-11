@@ -9,6 +9,9 @@ body
 font-size: 62.5%;
 height: 100vh;
 width: 100vw;
+max-width: 770px;
+max-height: 590px;
+
 
 }
 
@@ -25,6 +28,12 @@ width: 100vw;
     box-shadow: -3px 4px 13px 3px black;
 }
 
+h3
+{
+    text-align: center;
+    margin: 10px;
+    font-size: 1.5rem;
+}
 
 .muro
 {
@@ -225,11 +234,10 @@ width: 100vw;
 .layer1_conejo
 {
     z-index: 1;
-
     top: 105px;
     right: 0;
     left: calc(50% - 70px);
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-delay: 2s;
     
 }
@@ -251,7 +259,7 @@ width: 100vw;
     z-index: 4;
     bottom: 196px;
     left: 28px;
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-delay: 1.5s;
 }
 
@@ -260,7 +268,7 @@ width: 100vw;
     z-index: 6;
     bottom: 93px;
     right: 20px;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-delay: 3s;
 }
 
@@ -301,40 +309,3 @@ width: 100vw;
     right: 0;
     margin: 0 auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- */
