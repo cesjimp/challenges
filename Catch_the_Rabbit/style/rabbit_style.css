@@ -38,7 +38,34 @@ width: 100vw;
 {
     height: 64px;
     width: 60px;
-    position: absolute
+    position: absolute;
+    /* transition: transform 2s;
+    transition-timing-function:cubic-bezier(0.83, 0, 0.17, 1) ; */
+    animation-name: subir-conejo;
+
+    animation-iteration-count: infinite;
+    transition: transform 1s;
+    
+}
+@keyframes subir-conejo
+{
+    0%
+    {
+        transform: translateY(0px);
+
+    }
+    5%
+    {
+        transform: translateY(-55px);
+   
+    }
+    50%
+    {
+        transform: translateY(0px);
+ 
+
+    }
+
 }
 
 
@@ -115,6 +142,26 @@ width: 100vw;
         {
             position: absolute;
             right: 0;
+            animation-name: doblar;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            
+        }
+        @keyframes doblar 
+        {
+            0%
+            {
+                transform: rotateX(0deg);
+            }
+            5%
+            {
+                transform: rotateX(45deg);
+            }
+            10%
+            {
+                transform: rotateX(0deg);
+
+            }
         }
 
         .oreja-interna
@@ -123,7 +170,6 @@ width: 100vw;
             height: 39px;
             width: 20px;
             top:5px;
-
             border: solid;
             border-radius: 95%;
             background-color: pink;
@@ -180,40 +226,50 @@ width: 100vw;
 .layer1_conejo
 {
     z-index: 1;
-    background-color: red;
-    top: 40px;
+
+    top: 105px;
     right: 0;
     left: calc(50% - 70px);
-
+    animation-duration: 3s;
+    animation-delay: 2s;
+    
 }
 
 .layer2_conejo
 {
     z-index: 2;
-    background-color: blue;
-    top: 40px;
+
+    top: 105px;
     right: 0;
     left: calc(50% + 6px);
+    animation-duration: 2s;
+    animation-delay: 500ms;
 
 }
 
 .layer4_conejo
 {
     z-index: 4;
-    background-color: white;
-    bottom: 261px;
+    bottom: 196px;
     left: 28px;
+    animation-duration: 4s;
+    animation-delay: 1.5s;
 }
 
 .layer6_conejo
 {
     z-index: 6;
-    background-color: yellow;
-    bottom: 157px;
+    bottom: 93px;
     right: 20px;
+    animation-duration: 1s;
+    animation-delay: 3s;
 }
 
+.conejo :active
+{
+    transform: scale(2);
 
+}
 .nube
 {
     position: absolute;
@@ -248,7 +304,6 @@ width: 100vw;
 }
 
 
-/* 
 
 
 
@@ -277,7 +332,9 @@ width: 100vw;
 
 
 
-}
+
+
+
 
 
 
