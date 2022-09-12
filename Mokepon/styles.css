@@ -1,0 +1,266 @@
+/*los estilos en CSS pueden ser de varios selectores, como son el de:
+tipo, usa el mismo tipo de la etiqueta HTML
+clase, cuando se coloca en el HTML la etiqueta class al usarlo en HTML se debe invocar usando un punto (.) ejemplo .titulo
+id cuando se coloca en el html la etiqueta id para usarlo se debe invocar usando el simbolo (#) ejemplo #titulo*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+}
+
+body
+{
+    font-family:  'Patua One', cursive;
+    background-color:#222831 ;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+#titulo /*HACE REFERENCIA AL ID DE LA SECCION TTIULO*/
+{
+    color: #FF4D00;
+    display: flex; /* INDICA QUE EL ITEM ES DE ESTILO FLEX PARA PODER USAR Y MANIPULAR*/
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    align-items: center;
+    font-size: 1.8rem;
+
+}
+
+.subTitulo
+{
+    color:#FF4D00; 
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 15px;
+
+}
+#sectionSeleccionar_mascota/*HACE REFERENCIA AL ID DE LA SECCION SELECCIONAR MASCOTA*/
+{
+    
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items:center ;
+    padding: 10px ;
+    border: 15px;
+
+}
+
+#tarjetas-seleccion
+{
+    display: flex;
+    flex-direction:row;
+    width: 90%;
+    left: 0;
+    right: 0;
+    justify-self: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+.tarjetaMascota
+{
+    display:flex;
+    font-size: 1.4rem;
+    flex-direction: column;
+    align-items: center;
+    background-color:#FF0000;
+    margin: 10px;
+    width: 100px;
+    height: 150px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid coral; 
+    color:white; /*EB3F28*/
+    text-align: center;
+    border-radius: 10px;
+}
+
+.tarjetaMascota img /*especifica una etiqeuta contenida dentro de otra en este caso la etiqeuta macota contenida en la clase*/
+{
+    width: 80px;
+    border: 100px;
+    margin-bottom: 15px;
+}
+/* .boton-selmascota
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} */
+
+#boton-mascota
+{
+
+  
+    height: 40px;
+    width: 30%;
+    color: red;
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-width:1px;
+    border-color:white;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+canvas
+{
+    width: 95%;
+    height: 150%;
+    max-width: 400px;
+    max-height: 300px;
+    border: solid coral 3px;
+    align-items: center;
+
+}
+
+.botones-movimiento
+{
+    position: relative;
+    display: grid;
+    justify-items: center;
+    margin-top: 100px;    
+}
+.flechas
+{
+
+    background-color:coral;
+    border-radius: 5px;
+    font-size: small;
+    width: 30px;
+    height: 30px;
+}
+
+#boton-arriba
+{
+    width: 100%;
+    height: 100%;
+    background-image: url(./Assets/arrow_up.svg);
+
+    
+}
+
+
+
+
+#seleccionar_ataque
+{
+    flex-direction: column;
+    align-items: center;
+    background-color: #222831;
+}
+#botones button
+{
+    height: 50px;
+    margin: 5px;
+    width:100px;
+    border-radius: 20px;
+    border-color: transparent;
+}
+#boton-fire
+{
+    background-color: orange;
+   
+}
+
+#boton-fire:disabled
+{
+    background-color: white;    
+}
+#boton-water
+{
+    background-color:cyan;
+}
+
+#boton-water:disabled
+{
+    background-color:white;
+}
+#boton-ground
+{
+    background-color:brown;
+}
+
+#boton-ground:disabled
+{
+    background-color:white;
+}
+#score-temporal
+{
+    color:#FF4D00;
+    font-size: xx-large;
+    text-align: center;
+    margin: 10px;
+}
+#Mensajes
+{
+
+    margin-left: 40px;
+    padding: 2px;    
+    background-color: #222831;
+}
+
+#boton-restart
+{
+    color:#FF0000;
+    font-size: medium;
+    background-color:beige;
+    border-radius: 20px;
+    height: 50px;
+    width: 100px;
+}
+.resultados
+{
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    justify-content: center;
+    color: #FF0000;
+    font-size:medium;
+    font-size: x-large;
+  
+}
+
+.mascota
+{
+    color: aliceblue;
+    font-size: xx-large;
+}
+
+
+input
+{
+display: none;
+}
+
+input:checked+label
+{
+     background-color: orange;
+
+}
+
+
+.ver-mapa
+{
+    display: block;
+    justify-items: center;
+    width: 100vw; 
+}
+
+
+
+
+

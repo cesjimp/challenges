@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles.css"> <!--Link al archivo CSS-->
+
+</head>
+<body>
+
+    <section id="titulo">
+        <h1 class="tituloclase">MOKEPON🤣</h1>
+    </section>
+
+
+    <section id="sectionSeleccionar_mascota">
+        
+        <h2 class="subTitulo">Selecciona Tu mascota</h2>
+        <div id="tarjetas-seleccion" >
+            
+        </div>
+
+        <button id="boton-mascota">Seleccionar</button>
+    </section>
+
+    <section id="ver-mapa" class="ver-mapa">
+        <h2 class="subTitulo">Mueve tu mascota</h2>
+        <div>
+            <span id="mascota-jugador" class="mascota"> </span>
+            <span id="mascota-adversario" class="mascota">
+        
+        </div>
+            <!-- <canvas  id=mapa class= "lienzo" width="400" height="300"> -->
+            <canvas  id=mapa class= "lienzo" >
+
+            </canvas>
+
+        <section class="botones-movimiento" id="botones-movimiento">
+            <div class="flechas">
+                <button onmousedown="funcBotonArriba()" id="boton-arriba" ></button>
+            </div>
+            <div>
+     
+                <!-- <button onmousedown="funcBotonIzquierda()" id="boton-izquierda" class="flechas">⬅️</button>
+                <button onmousedown="funcBotonAbajo()" id="boton-abajo"    class="flechas">⬇️</button>           
+                <button onmousedown="funcBotonDerecha()" id="boton-derecha" class="flechas">➡️</button> -->
+            </div>
+        </section>
+
+    <section id="seleccionar_ataque">
+        <h2>Seleccionar Ataque </h2>
+
+        <div id="score-temporal">
+    
+        </div>
+
+
+        <div id="botones">
+            <button id="boton-fire">Fire🔥</button>
+            <button id="boton-water">Water 💧</button>
+            <button id="boton-ground">Ground 🌱</button>
+        </div>
+        <div id="Reinicar">
+            <button id="boton-restart">Restart</button>
+        </div>
+        <p></p>
+        <div>
+            <span id="mascota-jugador" class="mascota"> </span>
+            <span id="mascota-adversario" class="mascota"> </span><span id="vidas-rival"></span> 
+        </div>
+        <p></p>
+    </section>
+     
+
+
+    <section id="Mensajes" >
+        <div  class="resultados" >
+            <div id="ataqueJugador" ></div>     
+            <div id="ataqueRival"> </div>
+            <div id="ResBattle"> </div>
+        </div>
+   
+    </section>  
+    
+    
+
+    <script src="./js/mokepon.js"></script>
+</body>
+</html>
