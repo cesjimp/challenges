@@ -23,53 +23,60 @@ html
     font-size: 62.5%;
 }
 
-#titulo /*HACE REFERENCIA AL ID DE LA SECCION TTIULO*/
+.titulo /*HACE REFERENCIA AL ID DE LA SECCION TTIULO*/
 {
     color: #FF4D00;
-    display: flex; /* INDICA QUE EL ITEM ES DE ESTILO FLEX PARA PODER USAR Y MANIPULAR*/
+    padding: 20px;
+    display: flex;
+    flex-direction: row; /* INDICA QUE EL ITEM ES DE ESTILO FLEX PARA PODER USAR Y MANIPULAR*/
     width: 100%;
-    flex-direction: column;
-    text-align: center;
     left: 0;
     right: 0;
     margin: 0 auto;
-    align-items: center;
     font-size: 1.8rem;
+    justify-content: center;
 
 }
 
-.subTitulo
-{
-    color:#FF4D00; 
-    font-size: 1.8rem;
-    text-align: center;
-    padding: 15px;
-
-}
 #sectionSeleccionar_mascota/*HACE REFERENCIA AL ID DE LA SECCION SELECCIONAR MASCOTA*/
 {
     
+    width: 80%;
     display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    align-items:center ;
-    padding: 10px ;
-    border: 15px;
+    flex-direction: column;    
+    left: 0;
+    right: 0;
+    margin: 0 auto;    
+    justify-items: center;
+    align-items: center;
 
 }
+
+
+.subTitulo
+{
+    display: flex;
+    justify-self: center;
+    padding: 15px;
+    color: #FF4D00;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    align-content: center;
+    justify-content: center;
+}
+
 
 #tarjetas-seleccion
 {
     display: flex;
     flex-direction:row;
-    width: 90%;
+    width: 95%;
     left: 0;
     right: 0;
-    justify-self: center;
+    margin: 0 auto;
     flex-wrap: wrap;
     justify-content: center;
-
-
 }
 .tarjetaMascota
 {
@@ -95,17 +102,11 @@ html
     border: 100px;
     margin-bottom: 15px;
 }
-/* .boton-selmascota
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-} */
 
 #boton-mascota
 {
 
-  
+
     height: 40px;
     width: 30%;
     color: red;
@@ -117,12 +118,28 @@ html
     border-radius: 15px;
 }
 
+
+.mascota
+{
+    font-size: 1.8rem;
+    color: aliceblue;
+}
+
+
+.ver-mapa
+{
+    display: block;
+    justify-items: center;
+
+}
+
+
 canvas
 {
-    width: 95%;
-    height: 150%;
-    max-width: 400px;
-    max-height: 300px;
+    width: 400px;
+    height: 300px;
+    /* max-width: 400px;
+    max-height: 300px; */
     border: solid coral 3px;
     align-items: center;
 
@@ -130,7 +147,7 @@ canvas
 
 .botones-movimiento
 {
-    position: relative;
+
     display: grid;
     justify-items: center;
     margin-top: 100px;    
@@ -138,24 +155,12 @@ canvas
 .flechas
 {
 
-    background-color:coral;
+    background-color:red;
     border-radius: 5px;
     font-size: small;
     width: 30px;
     height: 30px;
 }
-
-#boton-arriba
-{
-    width: 100%;
-    height: 100%;
-    background-image: url(./Assets/arrow_up.svg);
-
-    
-}
-
-
-
 
 #seleccionar_ataque
 {
@@ -234,11 +239,6 @@ canvas
   
 }
 
-.mascota
-{
-    color: aliceblue;
-    font-size: xx-large;
-}
 
 
 input
@@ -252,13 +252,6 @@ input:checked+label
 
 }
 
-
-.ver-mapa
-{
-    display: block;
-    justify-items: center;
-    width: 100vw; 
-}
 
 
 
