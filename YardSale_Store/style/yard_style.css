@@ -1,0 +1,111 @@
+:root{
+    /*Colores*/
+    --very-light-pink :#C7C7C7;
+    --white: #FFFFFF;
+    --text-input-field: #F7F7F7;
+    --black:#000000;
+    --hospital-green:#ACD9B2;
+    --dark:#232830;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+}
+
+body
+{
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--white);
+}
+
+html{
+    font-size: 62.5%;
+
+}
+
+.imagen-logo
+{
+    width: 100%;
+    display: inline-flex;
+    padding-top: 114px;
+    padding-bottom: 48px;
+    
+}
+
+
+.logo
+{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 206px;
+    height: 43px;
+    background-image: url(../assets/img/logo_yard_sale.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.log-in-input-info
+{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    min-width: 180px;
+    max-width: 340px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    justify-items: center;
+}
+.log-in__label
+{
+    font-size: 1.4rem;
+    line-height: 1.75rem;
+    font-weight: bold;
+    padding: 8px 0;
+
+}
+
+.log-in__input
+{
+    
+    width: 100%;
+    border: solid;
+    height:42px ;
+    justify-items: center;
+    left: 0;
+    right: 0;
+    background-color: var(--text-input-field);
+    border-radius: 10px;
+
+}
+
+.links-log_in-Forgot-Password
+{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 100%;
+    text-align: center;
+
+}
+
+.log-in_boton
+{
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--hospital-green);
+    font-size: 1.8rem;
+    margin: 30px auto;
+    padding: 10px;
+    color:var(--white);
+    font-weight: bold;
+    text-decoration: none;
+    
+}
