@@ -130,8 +130,30 @@ html{
 
 }
 
+
+.sign-up
+{
+    display: grid;
+    grid-template-rows: 100%;
+    width: 90%;
+    min-width: 180px;
+    max-width: 340px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: 70px;
+    height: 150%;
+    bottom: 0px;
+
+
+
+
+}
 .sign-up_boton
 {
+
+    position: relative;
+    bottom: 15px;
     height: 50px;
     width: 100%;
     border-radius: 10px;
@@ -144,6 +166,8 @@ html{
     color:var(--hospital-green);
     font-weight: bold;
     text-decoration: none;
+    text-align: center;
+
     
 }
 
@@ -305,5 +329,158 @@ html{
     text-decoration: none;
     color: var(--hospital-green);
 
+}
+
+
+/*estilos para pagina create account*/
+
+.nav-sections-mobile
+{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    height: 58px ;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.046805);
+    justify-content: center;
+    position: relative;
+
+
+}
+
+.myaccount-menu
+{
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-hamb-icon
+{
+    width: 30px;
+    height: 30px;
+    background-image: url(../assets/icon/hamburguer_menu_icon.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.create-account-form
+{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    min-width: 180px;
+    max-width: 340px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+.create-account__label
+{
+    font-size: 1.4rem;
+    line-height: 1.75rem;
+    font-weight: bold;
+    padding: 8px 0;
+
+}
+
+.create-account__input
+{
+    
+    border: none;
+    width: 100%;
+    height:42px ;
+    justify-items: center;
+    left: 0;
+    right: 0;
+    background-color: var(--text-input-field);
+    border-radius: 10px;
+    font-size: 1.6rem;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--input-gray);
+    text-indent: 10px;
+    margin: 6px 0 24px 0; 
+
+}
+
+.my-account_title
+{
+    width: 100%;
+    margin-top: 34px ;
+}
+.my-account_title p
+{
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.logo-navbar-mobile
+{
+    display: flex;
+    width: 100%;
+    height: 90%;
+    min-width: 220px;
+    max-width: 230px;
+    min-height: 49px;
+    max-height: 53px;
+    justify-self: center;
+    align-self: center;
+
+}
+.logo-yard
+{
+
+    position: relative;
+    width: 100%;
+    height: 80%;
+    max-width: 200px;
+    max-height: 45px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url(../assets/img/logo_yard_sale.svg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+
+ 
+}
+
+.market-car
+{
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.market-car_icon
+{
+    position: relative;
+    width: 33px;
+    height: 33px;
+    background-image: url(../assets/icon/market_car.svg);
+    background-position: center;
+    background-size: cover;
+}
+.quantity-items-circle
+{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--hospital-green);
+    right: 0;
+    color: var(--white);
+    font-size: 1.2rem;
+    text-align: center;
 }
 
