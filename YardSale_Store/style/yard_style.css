@@ -180,7 +180,7 @@ html{
 }
 .new-password__label
 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 1.75rem;
     font-weight: bold;
 
@@ -236,7 +236,7 @@ html{
 
 
 
-.new-password__confirm
+.new-password__confirm, .log-in-recovery
 {
     display: flex;
     width: 100%;
@@ -257,4 +257,29 @@ html{
     text-decoration: none;
     
 }
+
+.recovery-sent
+{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    min-width: 180px;
+    max-width: 340px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+
+}
+.envelop-icon
+{
+    height: 153px;
+    width: 153px;
+    background-image: url(../assets/icon/envelop.svg);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+
 
