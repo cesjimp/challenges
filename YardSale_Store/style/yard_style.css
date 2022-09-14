@@ -105,7 +105,7 @@ html{
 
 }
 
-.log-in_boton
+.log-in_boton, .boton-create
 {
     height: 50px;
     width: 100%;
@@ -260,7 +260,7 @@ html{
 
 
 
-.new-password__confirm, .log-in-recovery
+.new-password__confirm, .log-in-recovery , .create-boton
 {
     display: flex;
     width: 100%;
@@ -367,7 +367,10 @@ html{
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+.create-account
+{
+    margin-top: 34px;
+}
 .create-account-form
 {
     display: flex;
@@ -413,6 +416,7 @@ html{
 {
     width: 100%;
     margin-top: 34px ;
+    margin-bottom: 47px;
 }
 .my-account_title p
 {
@@ -425,23 +429,18 @@ html{
 {
     display: flex;
     width: 100%;
-    height: 90%;
-    min-width: 220px;
-    max-width: 230px;
-    min-height: 49px;
-    max-height: 53px;
+    height: 100%;
     justify-self: center;
     align-self: center;
+    position: relative;
 
 }
 .logo-yard
 {
 
-    position: relative;
-    width: 100%;
-    height: 80%;
-    max-width: 200px;
-    max-height: 45px;
+    position: absolute;
+    width: 194px;
+    height: 39px;
     left: 0;
     right: 0;
     top: 0;
@@ -457,19 +456,28 @@ html{
 
 .market-car
 {
+    display: flex;
+    flex-direction: column;
     padding: 10px;
     justify-content: center;
     align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .market-car_icon
 {
-    position: relative;
-    width: 33px;
-    height: 33px;
+    position: absolute;
+    width: 35px;
+    height: 35px;
     background-image: url(../assets/icon/market_car.svg);
     background-position: center;
     background-size: cover;
+    right: 0;
+    left: 0;
+
+
 }
 .quantity-items-circle
 {
