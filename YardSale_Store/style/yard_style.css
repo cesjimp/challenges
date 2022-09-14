@@ -91,6 +91,7 @@ html{
     font-family: 'Quicksand', sans-serif;
     color: var(--input-gray);
     text-indent: 10px;
+    margin: 6px 0 24px 0; 
 
 }
 
@@ -175,13 +176,15 @@ html{
     right: 0;
     margin: 0 auto;
     justify-items: center;
+    position: relative;
 }
 .new-password__label
 {
     font-size: 1.4rem;
     line-height: 1.75rem;
     font-weight: bold;
-    padding: 8px 0;
+
+
 
 }
 
@@ -200,6 +203,7 @@ html{
     font-family: 'Quicksand', sans-serif;
     color: var(--input-gray);
     text-indent: 10px;
+    margin: 6px 0 24px 0; 
 }
 
 /*Estilos adicioanles para la pagina Password Recovery 1*/
@@ -231,6 +235,7 @@ html{
 }
 
 
+
 .new-password__confirm
 {
     display: flex;
@@ -252,3 +257,4 @@ html{
     text-decoration: none;
     
 }
+
