@@ -6,6 +6,8 @@
     --black:#000000;
     --hospital-green:#ACD9B2;
     --dark:#232830;
+    --input-gray:#797979;
+    
 
 }
 
@@ -17,8 +19,11 @@
 
 body
 {
+    display: flex;
+    flex-direction: column;
     font-family: 'Quicksand', sans-serif;
     background-color: var(--white);
+    
 }
 
 html{
@@ -74,14 +79,18 @@ html{
 .log-in__input
 {
     
+    border: none;
     width: 100%;
-    border: solid;
     height:42px ;
     justify-items: center;
     left: 0;
     right: 0;
     background-color: var(--text-input-field);
     border-radius: 10px;
+    font-size: 1.6rem;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--input-gray);
+    text-indent: 10px;
 
 }
 
@@ -97,15 +106,48 @@ html{
 
 .log-in_boton
 {
-    height: 40px;
+    height: 50px;
     width: 100%;
     border-radius: 10px;
     background-color: var(--hospital-green);
     font-size: 1.8rem;
     margin: 30px auto;
-    padding: 10px;
+    padding: 12px;
     color:var(--white);
     font-weight: bold;
     text-decoration: none;
     
+}
+.forgot-link
+{
+    
+    width: 100%;
+    font-size: 1.4rem;
+    color:var(--hospital-green);
+    text-decoration: none;
+    font-weight: 500;
+
+}
+
+.sign-up_boton
+{
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: var(--hospital-green);
+    
+    background-color: transparent;
+    font-size: 1.8rem;
+    margin: 30px auto;
+    padding: 12px;
+    color:var(--hospital-green);
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+.navigation-bar_Desktop
+{
+    display: none;
 }

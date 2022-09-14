@@ -1,0 +1,134 @@
+:root{
+    /*Colores*/
+    --very-light-pink :#C7C7C7;
+    --white: #FFFFFF;
+    --text-input-field: #F7F7F7;
+    --black:#000000;
+    --hospital-green:#ACD9B2;
+    --dark:#232830;
+    --input-gray:#797979;
+    
+
+}
+
+
+
+.navigation-bar_Desktop
+{
+    display: grid;
+    grid-template-columns: 25% 60% 15%;
+    width: 100%;
+    height: 54px;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.046805);
+
+}
+.imagen-logo
+{
+    display: none;
+}
+.log-in-input-info
+{
+    margin-top: 100px;
+}
+
+.nav-logo
+{
+    position: relative;
+    width: 80%;
+    margin: 5px;
+    left: 0;
+    right: 0;
+}
+
+.logo
+{
+    transform: scale(0.75);
+}
+
+
+.nav-sections
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+  
+
+}
+
+
+
+.sections-boton
+{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--very-light-pink);
+    text-align: center;
+    padding: 9px 21px;
+
+}
+
+.sections-boton:hover
+{
+    border-radius: 10px;
+    border: 1px solid;
+    color: var(--hospital-green);
+}
+
+
+
+.nav-sign-in_car
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.nav-sign-in__link
+{
+    font-size: 1.4rem;
+    color: var(--hospital-green);
+    text-decoration: none;
+    padding-left: 15px;
+
+
+}
+
+.market-car
+{
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.market-car_icon
+{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    background-image: url(../assets/icon/market_car.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+.quantity-items-circle
+{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--hospital-green);
+    right: 0;
+    color: var(--white);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+
+
+
