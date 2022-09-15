@@ -149,7 +149,7 @@ html{
 
 
 }
-.sign-up_boton
+.sign-up_boton, .edit-boton
 {
 
     position: relative;
@@ -260,7 +260,7 @@ html{
 
 
 
-.new-password__confirm, .log-in-recovery , .create-boton
+.new-password__confirm, .log-in-recovery , .edit-account-boton 
 {
     display: flex;
     width: 100%;
