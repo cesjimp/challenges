@@ -159,12 +159,20 @@ html
     display: none;
 }
 
+
+.about-me
+{
+    margin: 10px;
+    text-align: justify;
+    font-size: 1.2rem;
+    color: var(--color-secondary-1-2);
+}
 .dev-portfolio
 {
     display:flex;
     max-width: 100%;
-    gap: 20px;
-    height: 300px;
+    gap: 5px;
+    height: 400px;
     /* con esta seccion se hace un scroll horizontal */
     overflow-x: scroll;
     overscroll-behavior-x:contain;
@@ -174,21 +182,62 @@ html
 
 }
 
-.dev-portfolio a
+.dev-project-container
 {
     position: relative;
      /* con esta seccion se hace un scroll horizontal */
     scroll-snap-align: center;
-    margin-left: 10px;
-    background-color:var(--color-secondary-1-1);
+    margin-left: 15px;
+    background-color:var(--color-secondary-1-2);
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
-    margin: 50px auto 0; 
     border-radius: 8px;
-    width: 60%;
-    min-width: 180px;
+    width: 70%;
+    min-width: 250px;
     max-width: 300px;
     height: 240px;
     justify-self: center;
     align-self: center;
     text-align: center;
+    height: 90%;
+}
+
+.dev-project-container h2
+{
+    padding: 15px;
+    color: var(--color-secondary-1-3);
+    font-size: 1.6rem;
+}
+
+.dev-project-container img
+{
+    width:40%;
+    height: 50%;
+    max-width: 140px;
+}
+
+.yardsale-store img
+{
+    width:90%;
+    height: 50%;
+    max-width: 180px;
+}
+
+
+.dev-project-container p
+{
+    font-size: 1.rem;
+    padding: 8px;
+    color: var(--color-secondary-1-4);
+    margin-bottom: 10px;
+}
+
+.dev-project-container a
+{
+    background-color: var(--color-secondary-1-3);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 25px;
+    color: var(--color-secondary-1-1);
+
 }
