@@ -1,0 +1,29 @@
+.dev-portfolio, .tableau-portfolio
+{
+
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dev-project-container, .tableau-visualizations-container
+{
+    margin: 10px;
+}
+
+.presentation
+{
+
+    font-size: 1.6rem;
+
+}
+
+.presentation :nth-child(1)
+{
+    font-size: 2.0rem;
+
+}
+
+.about-me
+{
+    font-size: 1.6rem;
+}
