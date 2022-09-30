@@ -3,6 +3,9 @@
 
     flex-wrap: wrap;
     justify-content: center;
+    overflow-x:hidden;
+   
+
 }
 
 .dev-project-container, .tableau-visualizations-container
