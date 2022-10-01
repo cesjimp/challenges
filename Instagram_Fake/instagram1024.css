@@ -1,8 +1,10 @@
 body
 {
     display:grid;
+    justify-items: center;
     grid-template-columns: 50vw 50vw;
     grid-template-rows: 85vh 15vh;
+    
 }
 
 .imagen-telefono
@@ -27,7 +29,6 @@ body
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-
     width: 100%;
 
 }
@@ -38,20 +39,35 @@ body
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+     left: 0;
+    right: 0;
+    margin: 0 auto;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
 
-    width: 100vw;
 
 
 }
 
 .other-links
 {
-
+ 
     display: flex;
     flex-direction: row;
     align-content: center;    
     width: 100%;
     height: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+
+ 
 
 }
 
