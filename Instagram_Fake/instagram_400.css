@@ -1,0 +1,25 @@
+:root
+{
+    --border-box:#eaeaea;
+    --background-box:#fafafa;
+    --blue-boton:#afdcf9;
+    --facebook-color:#385185;
+    --register-color:#0095f6;
+    --grey-link:#8e8e8e;
+}
+
+.form--section
+{
+    background-color: #ffffff;
+    border: solid 1px;
+    border-color: #eaeaea;
+
+}
+
+.no-tienes-cuenta
+{
+    background-color: #ffffff;
+    border: solid 1px;
+    border-color: #eaeaea;
+    margin-bottom: 10px;
+}

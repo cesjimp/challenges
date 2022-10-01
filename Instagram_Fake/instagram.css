@@ -1,0 +1,224 @@
+:root
+{
+    --border-box:#eaeaea;
+    --background-box:#fafafa;
+    --blue-boton:#afdcf9;
+    --facebook-color:#385185;
+    --register-color:#0095f6;
+    --grey-link:#8e8e8e;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html
+{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fafafa;
+}
+ul
+{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+.Instagram--logo
+{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 50px 0;
+
+    
+}
+.main--container
+{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    margin: 20px auto;
+}
+
+.form--section
+{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    margin-bottom: 20px;
+}
+
+.inputfield
+{
+    width: 90%;
+    height: 38px;
+    font-size: 1.0rem;
+    padding: 5px;
+    border-radius: 5px;    
+    border-color: var(--border-box);
+    background-color: var(--background-box);
+    left: 0;
+    right: 0;
+    margin: 5px auto;
+    
+}
+
+.boton-entrar
+{
+    width: 90%;
+    height: 30px;
+    margin: 15px auto;
+    background-color:var(--blue-boton);
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    
+}
+
+.section--division
+{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-self: center;
+    align-self: center;
+}
+.section--division--line
+{
+
+    border-bottom: solid 1px;
+    width: 45%;
+    margin: 15px 5px;
+    border-color: var(--border-box);
+    
+}
+
+.section--division--text
+{
+    margin: 6px 5px;
+    color: var(--border-box);
+    font-size: 1.5rem;
+
+}
+
+.links-inicio
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+
+}
+
+.iniciar-sesion-con-FB
+{
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+    color:var(--facebook-color);
+    font-size: 1.4rem;
+}
+
+.Olvido-Contrasena
+{
+
+    left: 0;
+    right: 0;
+    margin: 15px auto;
+    color:var(--facebook-color);
+    font-size: 1.2rem;
+}
+
+.links--section
+{
+    width: 100%;
+}
+.no-tienes-cuenta
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--grey-link);
+    font-size: 1.4rem;
+    padding: 20px;
+
+
+
+    
+}
+
+.no-tienes-cuenta a
+{
+    color: var(--register-color);
+}
+
+
+.appstore-links
+{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px auto;
+    
+}
+
+.descarga
+{
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--grey-link);
+}
+
+.image-appstore
+{
+    height: 40px;
+    margin: 5px;
+}
+
+
+.footer
+{
+    margin: 20px auto;
+    padding: 25px;
+    max-width: 700px;
+    margin-bottom: 50px;
+
+}
+
+.other-links
+{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-self: center;
+    margin: 0px auto 5px;
+}
+
+.other-links li
+{
+    padding: 3px;
+}
+
+.link-secundario
+{
+    color: var(--grey-link);
+    font-size: 1rem;
+    font-weight: 300;
+}
