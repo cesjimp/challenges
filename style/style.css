@@ -244,6 +244,20 @@ html
     max-width: 180px;
 }
 
+
+.Instagram_fake img
+{
+    width:90%;
+    height: 50%;
+    max-width: 180px;
+}
+.Mokepon_game img
+{
+    width:90%;
+    height: 50%;
+    max-width: 180px;
+}
+
 .military-budget img
 {
     width:100%;
@@ -316,11 +330,6 @@ html
     right: 0;
     margin: 0 auto;
     justify-content: center;
-
-
-
-
-
 }
 
 .icons
