@@ -263,6 +263,16 @@ html
     width:100%;
     height: 40%;
     max-width: 190px;
+    margin-bottom: 30px;
+}
+
+.bershireHathaway img
+{
+    width:100%;
+    height: 40%;
+    max-width: 190px;
+    margin-bottom: 50px;
+    margin-top: 15px;
 }
 
 .dev-project-container p, .tableau-visualizations-container p
