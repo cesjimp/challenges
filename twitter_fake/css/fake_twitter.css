@@ -1,0 +1,204 @@
+:root{
+    /*Colores*/
+    --blue-twitter-hover:#e8f5fd;
+    --blue-twitter:#1d9bf0;
+    --blue-twitterblue:#358ac4;
+
+}
+
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+ul
+{
+    list-style: none;
+}
+
+.twitter
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1240px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  
+}
+
+
+.section-sections
+{
+    width: 25%;
+    border: solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.botton-twitter-icon
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 20px 20px 20px 40px;
+    background-color: var(--blue-twitter-hover);
+    border-radius: 50%;
+    width:35px;
+    height: 35px;
+}
+
+
+.twitter-icon
+{
+    width:85%;
+    margin: 0;
+    padding: 2px;
+}
+
+.botton-section-link
+{
+    height: 40px;
+    margin-left: 20px;
+    display: flex;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    justify-content:left;
+    align-items: center;
+    padding: 10px;
+    width: fit-content;
+}
+
+.botton-section-link:hover
+{
+    background-color: var(--blue-twitter-hover)
+}
+
+.boton-section-icon
+{
+   padding: 10px;
+   width: 45px;
+   height: 45px;
+}
+
+.boton-section-text
+{
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-right: 15px;
+    
+}
+
+.botton-Twittear-link
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 45px;
+    border-radius: 25px;
+    background-color:var(--blue-twitter) ;
+    margin: 15px 15px 15px 20px;
+}
+
+.botton-Twittear-link:hover
+{
+    background-color: var(--blue-twitterblue);
+    
+}
+
+.botton-Twittear-link p
+{
+    color: white;
+    font-size: 2.0rem;
+    font-family: 700;
+}
+
+
+.botton-Account
+{
+
+    width:90%;
+    border-radius: 40px;
+    margin-left: 20px;
+}
+
+.botton-Account:hover
+{
+
+background-color: var(--blue-twitter-hover);
+}
+
+.botton-Account-container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.image-profile-container
+{
+    border-radius: 50%;
+    padding: 10px;
+
+}
+
+.profile-name-ussername
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.profile-name
+{
+    font-size: 1.8rem;
+    font-weight: 700;
+
+}
+
+.profile-ussername
+{
+    font-size: 1.2rem;
+    font-weight: 300;
+
+}
+.image-profile
+{
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+
+.section-twitts
+{
+    width: 45%;
+    border: solid
+}
+
+.section-recommendations
+{
+    width: 30%;
+    border: solid;
+    
+}
