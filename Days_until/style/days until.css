@@ -1,0 +1,164 @@
+:root
+{
+    --primarycolor:#006E7F;
+    --secondary-color:#F8CB2E;
+    --third-color:#EE5007;
+    --fourth-color:#B22727;
+
+
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primarycolor);
+}
+
+.titulo
+{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 20px;
+
+}
+
+h1
+{
+    font-size: 2.4rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+    text-align: center;
+}
+
+h2
+{
+    font-size: 1.6rem;
+    color: var(--third-color);
+
+}
+
+.titulo :nth-child(2)
+{
+    margin-top: 20px;
+}
+
+.cuantos-dias
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contador , .cronometro
+{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.number-container
+{
+    width: 100px;
+    height: 100px;
+    border:solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+}
+
+
+.seleccion-fecha
+{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 5px;
+    left: 0;
+    right: 0;
+    margin:15px auto;
+    justify-content: center;
+    
+}
+.input-number
+{
+    
+    width: 50%;
+    min-width: 60px;
+    height: 35px;
+    border-radius: 10px;
+    padding: 3px;
+    font-size: 1.2rem;
+
+}
+
+.pastorfuture
+{
+    font-size: 1.6rem;
+    color: var(--third-color);
+    padding: 10px;
+    width: 70%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.botones
+{
+    width: 50%;
+    min-width: 60px;
+    height: 35px;
+    border-radius: 10px;
+    padding: 3px;
+    font-size: 1.2rem;
+    background-color: var(--secondary-color);
+}
+
+.text-container
+{
+    font-size: 1.4rem;
+}
+.number
+{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.0rem;
+    color: var(--fourth-color);
+}
+
+.cronometro
+{
+    margin-top: 50px;
+}
+
+.botones-cronometro
+{
+    display: flex;
+    flex-direction: row;
+    margin:15px;
+    column-gap: 15px;
+}
+
+.laps p
+{
+    font-size: 1.4rem;
+    color: wheat   
+}

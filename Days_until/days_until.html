@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/days until.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>How many days until?</title>
+</head>
+<body>
+    <div class="titulo">
+        <h1>Cuanto tiempo falta o ha pasado desde una fecha especial?</h1>
+        <h2>Selecciona una fecha del pasado o del futuro</h2>
+        <h2>y sabras cuanto tiempo ha pasado hasta el dia de hoy o cuanto falta desde el dia de hoy.</h2>
+    </div>
+
+    <div class="cuantos-dias">
+
+
+        <div class="seleccion-fecha">
+            <input type="number" class="DateSleceted-Day input-number" placeholder="dd">
+            <input type="number" class="DateSleceted-month input-number" placeholder="mm">
+            <input type="number" class="DateSleceted-year input-number" placeholder="yyyy">
+            <input type="button" value="Calcular" class="botones boton-calcular">
+        </div>
+    
+
+        <div class="today-date-container">
+            <p class="pastorfuture">Pasado o Futuro?</p>
+        </div>
+    
+        <section class="contador">
+            <div class="weeks-container number-container">
+                <p class="weeks-text text-container">Weeks</p>
+                <p class="weeks-number number">00</p>
+            </div>
+            <div class="days-container number-container">
+                <p class="days-text text-container">Days</p>
+                <p class="days-number number">00</p>
+            </div>
+            <div class="hours-container number-container">
+                <p class="hours-text text-container">Hours</p>
+                <p class="hours-number number">00</p>
+            </div>
+            <div class="minutes-container number-container">
+                <p class="minutes-text text-container">Minutes</p>
+                <p class="minutes-number number">00</p>
+            </div>
+            <div class="seconds-container number-container">
+                <p class="seconds-text text-container">seconds</p>
+                <p class="seconds-number number">00</p>
+            </div>
+        </section>
+
+        <section class="cronometro">
+            
+
+            <div class="days-container number-container">
+                <p class="days-text text-container">Days</p>
+                <p class="days-cronometro-number number">00</p>
+            </div>
+            <div class="hours-container number-container">
+                <p class="hours-text text-container">Hours</p>
+                <p class="hours-cronometro-number number">00</p>
+            </div>
+            <div class="minutes-container number-container">
+                <p class="minutes-text text-container">Minutes</p>
+                <p class="minutes-cronometro-number number">00</p>
+            </div>
+            <div class="seconds-container number-container">
+                <p class="seconds-text text-container">seconds</p>
+                <p class="seconds-cronometro-number number">00</p>
+            </div>
+            <div class="miliseconds-container number-container">
+                <p class="miliseconds-text text-container">Miliseconds</p>
+                <p class="miliseconds-cronometro-number number">00</p>
+            </div>
+
+
+        </section>
+        <div class="botones-cronometro">
+            <input type="button" value="Start" class=" botones boton-start">
+            <input type="button" value="Lap" class=" botones boton-lap">
+            
+        </div>
+        <div class="laps">
+
+        </div>
+
+
+    </div>
+
+
+    <script src="./js/days_until.js"></script>
+</body>
+</html>

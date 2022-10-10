@@ -265,6 +265,13 @@ html
     max-width: 180px;
 }
 
+.Days-Until img
+{
+    width:90%;
+    height: 50%;
+    max-width: 140px;
+}
+
 .military-budget img
 {
     width:100%;
