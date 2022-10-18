@@ -24,8 +24,7 @@ const botonStop=document.querySelector(".boton-stop")
 botonCalcular.addEventListener("click",iniciarcontador)
 botonIniciarCronometro.addEventListener("click",iniciarCronometro)
 botonLap.addEventListener("click", capturarTiempo)
-botonStop.addEventListener("click",stop)
-stop
+// botonStop.addEventListener("click",stop)
 
 
 
@@ -126,6 +125,11 @@ function cuantosDias()
 
 }
 
+/**
+ * It takes the current date and time, and then it calculates the difference between the current date
+ * and time and the date and time when the function was called.
+ * @returns the array timeNow.
+ */
 function iniciarCronometro()
 {
     
@@ -163,6 +167,10 @@ function iniciarCronometro()
 
 }
 
+/**
+ * It creates a paragraph element, appends it to the resultadosLaps div, and then fills it with the
+ * timeNow array.
+ */
 function capturarTiempo()
 {
     lapNumber=lapNumber+1

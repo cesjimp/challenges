@@ -80,6 +80,10 @@ let ancho=0
 let lienzo=mapa.getContext("2d")
 
 
+/* The class is called `mascota` and it has four properties: `nombre`, `foto`, `ancho`, and `alto`. 
+
+The constructor is a function that is called when you create a new instance of the class. It's used
+to set the initial values of the properties. */
 class mascota /*se usa para iniciar la construccion de una clase es como el plano de una casa*/
 {
     constructor(nombre, foto,ancho,alto)/*constructor le da los atributos que pueden tener los objetos de esta clase son como las casas*/
@@ -99,6 +103,7 @@ let Fireking = new mascota("Fireking", "./Assets/Fireking.png",ancho=80,alto=70)
 let Princeground = new mascota("Princeground", "./Assets/Princeground.png",ancho=70,alto=70)
 
 
+/* Creating an array of objects. */
 Aquaqueen.ataque.push
 (
     {nombre:"💧", id:"boton-water", cantWater:3}, /*se crean los ataques para aquaqueen y se hace referencia al boton que lo activa*/
@@ -127,6 +132,9 @@ mascotasArray.push(Aquaqueen, Fireking,Princeground) /*el metodo push inserta lo
 
 
 
+/**
+ * It's a function that sets up the game.
+ */
 function iniciarJuego()//todo loq ue se debe ejecutar para tener disponible el juego para iniciar.
 {
     sectionSeleccionarAtaque.style.display="none"  //Esconde una seccion del HTML
@@ -177,21 +185,12 @@ function iniciarJuego()//todo loq ue se debe ejecutar para tener disponible el j
     derechaEnemigo=rivalX+ancho
     izquierdaEnemigo=rivalX
 
-    console.log("mascota X"+mascotaX)
-    console.log("mascota Y"+mascotaY)
-    console.log("Rival X"+rivalX)
-    console.log("Rival Y"+rivalY)
-    console.log("Abajo Mascota"+abajoMascota)
-    console.log("Arriba Enemigo"+arribaEnemigo)
-    console.log("Arriba Mascota"+arribaMascota)
-    console.log("Abajo Enemigo"+abajoEnemigo)
-    console.log("Derecha Mascota"+derechaMascota)
-    console.log("Izquierda Enemigo"+izquierdaEnemigo)
-    console.log("Derecha Enemigo"+derechaEnemigo)
-    console.log("Izquierda Mascota"+izquierdaMascota)
 
 }
 
+/**
+ * It moves the character up 5 pixels, then checks if the character is on top of the rival.
+ */
 function funcBotonArriba()
 {
     mascotaY=mascotaY-5

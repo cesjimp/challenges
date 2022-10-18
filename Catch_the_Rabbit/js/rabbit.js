@@ -17,6 +17,10 @@ layer4_conejo.addEventListener("mousedown", punto)
 
 let puntaje = 0
 
+/**
+ * When the function is called, the variable 'puntaje' is increased by 1, and the variable 'score' is
+ * updated to reflect the new value of 'puntaje'.
+ */
 function punto()
 {
     puntaje=puntaje+1
