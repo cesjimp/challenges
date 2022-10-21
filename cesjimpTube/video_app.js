@@ -1,9 +1,19 @@
 
 let timeWindow="day"
+let page=1
 let arrayMovies;
 let data;
+let dataLastMovies;
 let arrayDataGenres;
-let page=1
+let totalPagesData;
+
+let listToShow=0
+
+
+const allMoviesButton=document.querySelector(".button__all")
+const topMoviesButton=document.querySelector(".button__top")
+const newMoviesButton=document.querySelector(".button__new")
+const nowMoviesButton=document.querySelector(".button__now")
 const fastPreviousNavigationButton = document.querySelector(".previ_fast_button")
 const PreviousNavigationButton = document.querySelector(".previ__button")
 const fastNextNavigationButton = document.querySelector(".next_fast_button")
@@ -13,6 +23,11 @@ fastPreviousNavigationButton.addEventListener("click",movePreviousFast)
 PreviousNavigationButton.addEventListener("click",movePrevious)
 fastNextNavigationButton.addEventListener("click",moveNextFast)
 NextNavigationButton.addEventListener("click",moveNext)
+allMoviesButton.addEventListener("click", setListAll)
+topMoviesButton.addEventListener("click", setListTop)
+newMoviesButton.addEventListener("click", setListNew)
+nowMoviesButton.addEventListener("click", setListNow)
+
 
 
 const botonDetails0=document.querySelector(".button0")
@@ -58,24 +73,49 @@ botonDetails18.addEventListener("click", setIndex18)
 botonDetails19.addEventListener("click", setIndex19)
 
 
-// async function loadGenres()
-// {
-//     const URL_GENRES=`https://api.themoviedb.org/3/genre/movie/list?api_key=b3117004fe08a3e0abaa1a190e00aa26&language=en-US`
-//     const genderMovies= await fetch(URL_GENRES)
-//     dataGenres=await genderMovies.json()
-//     arrayDataGenres=dataGenres.genres
-//     return arrayDataGenres
 
-// }
+async function testNewList()
+{
+    const URL_API_LASTMOVIES = `https://api.themoviedb.org/3/movie/top_rated?api_key=b3117004fe08a3e0abaa1a190e00aa26&language=en-US$` /*Lita para trending movies */
+    const lastMovies = await fetch(URL_API_LASTMOVIES)
+    dataLastMovies = await lastMovies.json()
+    // console.log(dataLastMovies)
+}
+testNewList()
 
 
 async function loadTrendMovies(page)
 {
-    const URL_API_VideoDB = `https://api.themoviedb.org/3/trending/movie/${timeWindow}?page=${page}&api_key=b3117004fe08a3e0abaa1a190e00aa26` /*Lita para trending movies */
-    const trendMovies = await fetch(URL_API_VideoDB)
+    let URL_API_LASTMOVIES_SELECTED;
+    console.log(page)
+    // const URL_API_VideoDB =`https://api.themoviedb.org/3/movie/popular?api_key=b3117004fe08a3e0abaa1a190e00aa26&language=en-US$&page=${page}`
+    // const URL_API_VideoDB =`https://api.themoviedb.org/3/movie/top_rated?api_key=b3117004fe08a3e0abaa1a190e00aa26&language=en-US$&page=${page}`
+    
+    if(listToShow==0)
+    {
+        URL_API_LASTMOVIES_SELECTED=`https://api.themoviedb.org/3/movie/popular?api_key=b3117004fe08a3e0abaa1a190e00aa26&language=en-US$&page=${page}`
+        
+    }
+    else if(listToShow==1)
+    {
+        URL_API_LASTMOVIES_SELECTED=`https://api.themoviedb.org/3/movie/top_rated?api_key=b3117004fe08a3e0abaa1a190e00aa26&language=en-US$&page=${page}`
+        
+    }
+    else if (listToShow==2)
+    {
+        URL_API_LASTMOVIES_SELECTED=`https://api.themoviedb.org/3/movie/upcoming?api_key=b3117004fe08a3e0abaa1a190e00aa26&language=en-US$&page=${page}`
+        
+    }
+    else if(listToShow==3)
+    {
+        URL_API_LASTMOVIES_SELECTED=`https://api.themoviedb.org/3/movie/now_playing?api_key=b3117004fe08a3e0abaa1a190e00aa26&language=en-US$&page=${page}`
+    }
+
+    const trendMovies = await fetch(URL_API_LASTMOVIES_SELECTED)
     data= await trendMovies.json()
     arrayMovies=data.results
-    let totalPagesData=data.total_pages
+    console.log(data)
+    totalPagesData=data.total_pages
 
 
     const totalpages=document.querySelector(".total_pages")
@@ -317,8 +357,7 @@ async function showDetails(index)
     const genderMovies= await fetch(URL_GENRES)
     dataGenres=await genderMovies.json()
     arrayDataGenres=dataGenres.genres
-
-    
+   
 
     let sortedArray=arrayMovies.sort((a,b)=>b.vote_average-a.vote_average)
     const imageMovieSelectedPath=sortedArray[index].backdrop_path
@@ -521,9 +560,9 @@ function movePrevious()
 function moveNextFast()
 {
 
-    if(page>994)
+    if(page>=(totalPagesData-5))
     {
-        page=1000
+        page=totalPagesData
         loadTrendMovies(page)
         showDetails(0)
     }
@@ -538,9 +577,9 @@ function moveNextFast()
 function moveNext()
 {
 
-    if(page>999)
+    if(page>=(totalPagesData-1))
     {
-        page=1000
+        page=totalPagesData
         loadTrendMovies(page)
         showDetails(0)
     }
@@ -553,13 +592,35 @@ function moveNext()
     
 }
 
-
-function aleatorio (min, max)
+function setListAll()
 {
-    let numaleatorio = Math.floor((Math.random()*(max-min+1))+min);// se usa math.floor para poder obtener los limites, si se usa math.ceil no se obtendria el limite.
-    return numaleatorio;
-
+    listToShow=0
+    page=1
+    loadTrendMovies(page)
+    showDetails(0) 
 }
+function setListTop()
+{
+    listToShow=1
+    page=1
+    loadTrendMovies(page)
+    showDetails(0) 
+}
+function setListNew()
+{
+    listToShow=2
+    page=1
+    loadTrendMovies(page)
+    showDetails(0) 
+}
+function setListNow()
+{
+    listToShow=3
+    page=1
+    loadTrendMovies(page)
+    showDetails(0) 
+}
+
 
 loadTrendMovies(1)
 showDetails(0)
