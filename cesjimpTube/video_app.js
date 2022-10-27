@@ -73,13 +73,37 @@ botonDetails18.addEventListener("click", setIndex18)
 botonDetails19.addEventListener("click", setIndex19)
 
 
-
+let array;
 async function testNewList()
 {
-    const URL_API_LASTMOVIES = `https://api.themoviedb.org/3/movie/top_rated?api_key=b3117004fe08a3e0abaa1a190e00aa26&language=en-US$` /*Lita para trending movies */
-    const lastMovies = await fetch(URL_API_LASTMOVIES)
-    dataLastMovies = await lastMovies.json()
-    // console.log(dataLastMovies)
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': '48cc0ad23bmsh5301ef1c6d5abd6p1d37aajsnbc0e6568ca5c',
+            'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
+        }
+    };
+    
+    fetch('https://exercisedb.p.rapidapi.com/exercises', options)
+        .then(response => response.json())
+        .then(data1 => {
+            let equipment = data1[0].equipment
+            array=data1
+            console.log(equipment)
+            console.log(array)
+
+
+        })
+
+            
+        .catch(err => console.error(err));
+
+    
+    // const URL_API_LASTMOVIES = `https://api.themoviedb.org/3/movie/top_rated?api_key=b3117004fe08a3e0abaa1a190e00aa26&language=en-US$` /*Lita para trending movies */
+    // const lastMovies = await fetch(URL_API_LASTMOVIES)
+    // dataLastMovies = await lastMovies.json()
+    // // console.log(dataLastMovies)
+
 }
 testNewList()
 

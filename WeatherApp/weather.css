@@ -1,0 +1,146 @@
+:root
+{
+    
+    --first-color:#153462;
+    --second-color:#4FA095;
+    --third-color:#BAD1C2;
+    --fourth-color:#F6F6C9;
+
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--third-color);
+}
+
+.input-container
+{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    row-gap: 5px;
+    align-items: center;
+}
+
+.search-input
+{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--fourth-color);
+}
+
+.search-button
+{
+    width: 40%;
+    max-width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--fourth-color);
+}
+.card-actual-Weather-container
+{
+    display: flex;
+    flex-direction: column;
+    width:310px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border: solid;
+    border-color: var(--fourth-color);
+    border-radius: 10px;
+    margin-top: 30px; 
+}
+
+.country-description-container
+{
+
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    padding: 10px;
+}
+
+.country-characteristics
+{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    
+
+}
+
+.country-name-code
+{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+}
+
+.country-flag-container
+{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.country-flag
+{
+    width: 100px;
+}
+
+.weather-graphs
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-icon
+{
+    width: 50%;
+}
+
+.icon-Current-Weather
+{
+    width: 80px;
+    height: 80px;
+}
+
+.weather-icon-container-description
+{
+    width: 50%;
+
+}
+
+.weather-temperatures-container
+{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.weather-temperatures-container p
+{
+    font-size: 1.2rem;
+}

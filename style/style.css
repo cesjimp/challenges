@@ -279,6 +279,13 @@ html
     max-width: 170px;
 }
 
+.cesjimpWeather img
+{
+    width:80%;
+    height: 50%;
+    max-width: 170px;
+}
+
 .military-budget img
 {
     width:100%;
