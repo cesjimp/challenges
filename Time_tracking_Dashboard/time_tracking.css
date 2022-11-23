@@ -1,0 +1,251 @@
+:root
+{
+    
+    --lightred_work:hsl(15, 100%, 70%);    
+    --softblue_play: hsl(195, 74%, 62%);
+    --lightred_study: hsl(348, 100%, 68%);
+    --Limegreen_exercise: hsl(145, 58%, 55%);
+    --violet_social: hsl(264, 64%, 52%);
+    --Softorange_selfcare: hsl(43, 84%, 65%);
+    --very_dark_blue: hsl(226, 43%, 10%);
+    --Dark_blue:hsl(235, 46%, 20%);
+    --Desaturated_blue: hsl(235, 45%, 61%);
+    --Paleblue: hsl(236, 100%, 87%);
+
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--very_dark_blue)
+}
+
+main
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    justify-content: center;
+    
+}
+.card
+{
+    width: 340px;
+}
+
+.card_usser-container
+{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    
+}
+.usser-profile
+{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    background-color: var(--Desaturated_blue);
+    position: relative;
+    border-radius: 15px;
+    z-index:  2;
+}
+
+.navigation_bar_timeframes
+{
+    background-color: var(--Dark_blue);
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 15px;
+    position: absolute;
+    width: 340px;
+    top: 150px;
+
+
+}
+.image-profile-container
+{
+    width: 40%;
+    padding:30px;
+    
+}
+.usser-profile img
+{
+    width: 100%;
+    border-radius: 50%;
+    border: solid;
+    border-color: white;
+   
+}
+.frontcard
+{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    color: white;
+    bottom: 0;
+}
+
+.report-text
+{
+    font-size: 1.4rem;
+    color: var(--Paleblue)
+}
+
+.usser_name
+{
+    font-size: 1.8rem;
+    padding: 5px 0;
+    color: white;
+}
+
+
+
+.navigation_bar_timeframes button
+{
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--Desaturated_blue);
+    padding: 15px;
+    margin-top: 20px;
+    position: relative;
+
+}
+
+.activity-card-container
+{
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    position: relative;
+    margin: 30px 0 60px 0; 
+}
+
+
+.backcard
+{
+    z-index: 1;
+    height: 60px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    height: 70px;
+}
+
+.backcard_work
+{
+    background-image: url(./assets/icon-work.svg);
+    background-color: var(--lightred_work);
+}
+
+
+.backcard_play
+{
+    background-image: url(./assets/icon-play.svg);
+    background-color: var(--softblue_play);
+}
+
+.backcard_study
+{
+    background-image: url(./assets/icon-study.svg);
+    background-color: var(--lightred_study)
+}
+
+.backcard_excersise
+{
+    background-image: url(./assets/icon-exercise.svg);
+    background-color: var(--Limegreen_exercise)
+}
+
+.backcard_social
+{
+    background-image: url(./assets/icon-social.svg);
+    background-color: var(--violet_social)
+}
+
+.backcard_selfcare
+{
+    background-image: url(./assets/icon-self-care.svg);
+    background-color: var(--Softorange_selfcare)
+}
+
+
+.frontcard
+{
+
+    position: absolute;
+    height: 100px;
+    z-index: 2;
+    background-color: var(--Dark_blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 40px;
+    border-radius: 15px;
+
+}
+
+.activity-currenttime
+{
+    display: flex;
+    flex-direction: column;
+    margin:30px;
+
+}
+
+.activity-currenttime :nth-child(1)
+{
+    font-size: 1.6rem;
+    font-weight: 300;
+    color:var(--Paleblue)
+}
+
+.activity-currenttime :nth-child(2)
+{
+    font-size: 2.6rem;
+    font-weight: 300;
+    color:var(--Paleblue)
+}
+
+.info_lasttime
+{
+    margin-right: 30px;
+    position: relative;
+}
+
+.more-info-button
+{
+
+    height: 5px;
+    background-image: url(./assets/icon-ellipsis.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    margin: 10px;
+}
+.last-timeframe-info-container
+{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.last-timeframe, .last-time
+{
+    font-size: 1.4rem;
+    color:var(--Desaturated_blue)
+}
